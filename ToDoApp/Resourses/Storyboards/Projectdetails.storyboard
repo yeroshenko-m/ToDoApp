@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Project Details View Controller-->
+        <scene sceneID="sF3-b1-ezp">
+            <objects>
+                <viewController storyboardIdentifier="ProjectDetailsViewController" automaticallyAdjustsScrollViewInsets="NO" id="Rw6-1K-PbD" customClass="ProjectDetailsViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nOV-cq-wPm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="W0c-tf-G6c" customClass="TableView" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="idz-gn-QgB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="W0c-tf-G6c" secondAttribute="bottom" id="M7v-aT-vUr"/>
+                            <constraint firstItem="W0c-tf-G6c" firstAttribute="top" secondItem="idz-gn-QgB" secondAttribute="top" id="fX2-U7-4vj"/>
+                            <constraint firstItem="idz-gn-QgB" firstAttribute="trailing" secondItem="W0c-tf-G6c" secondAttribute="trailing" id="rEm-rz-aNx"/>
+                            <constraint firstItem="W0c-tf-G6c" firstAttribute="leading" secondItem="idz-gn-QgB" secondAttribute="leading" id="zXq-bZ-GeS"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="LNm-zM-Uqb"/>
+                    <connections>
+                        <outlet property="tableView" destination="W0c-tf-G6c" id="wTp-SV-JzH"/>
+                        <segue destination="maI-ur-0ba" kind="presentation" identifier="ShowAddTaskViewController" id="jsw-up-Dei"/>
+                        <segue destination="rw4-6I-Tkk" kind="presentation" identifier="ShowEditTaskViewController" id="RAT-XV-hdI"/>
+                        <segue destination="9Nd-Qo-0iF" kind="show" identifier="ShowProjectDetailsFiltersViewController" id="WHM-vh-znc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yh3-lj-2dZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7591" y="1311"/>
+        </scene>
+        <!--Project Details Filters View Controller-->
+        <scene sceneID="iqR-A9-6Sb">
+            <objects>
+                <viewController storyboardIdentifier="ProjectDetailsFiltersViewController" id="9Nd-Qo-0iF" customClass="ProjectDetailsFiltersViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D8P-qW-cb9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="A0u-MH-HXD" customClass="TableView" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WCQ-LR-nla"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A0u-MH-HXD" firstAttribute="top" secondItem="WCQ-LR-nla" secondAttribute="top" id="EEu-0Q-Eaq"/>
+                            <constraint firstItem="A0u-MH-HXD" firstAttribute="leading" secondItem="WCQ-LR-nla" secondAttribute="leading" id="HFQ-Np-N5k"/>
+                            <constraint firstAttribute="bottom" secondItem="A0u-MH-HXD" secondAttribute="bottom" id="Riw-L1-YGx"/>
+                            <constraint firstItem="A0u-MH-HXD" firstAttribute="trailing" secondItem="WCQ-LR-nla" secondAttribute="trailing" id="znr-ld-kY1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bsD-p7-P1S"/>
+                    <connections>
+                        <outlet property="tableView" destination="A0u-MH-HXD" id="wTp-Zt-RkN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XcI-Ds-fVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8367" y="612"/>
+        </scene>
+        <!--Add Task View Controller-->
+        <scene sceneID="f74-lZ-4Wj">
+            <objects>
+                <viewController storyboardIdentifier="AddTaskViewController" automaticallyAdjustsScrollViewInsets="NO" id="maI-ur-0ba" customClass="AddTaskViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tyg-wk-SiB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="IfQ-6b-8HD" customClass="TableView" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lvd-02-TtP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lvd-02-TtP" firstAttribute="trailing" secondItem="IfQ-6b-8HD" secondAttribute="trailing" id="0Ov-AO-yeK"/>
+                            <constraint firstItem="IfQ-6b-8HD" firstAttribute="leading" secondItem="Lvd-02-TtP" secondAttribute="leading" id="Xrc-22-Q6r"/>
+                            <constraint firstItem="IfQ-6b-8HD" firstAttribute="top" secondItem="Lvd-02-TtP" secondAttribute="top" id="pua-K2-Tic"/>
+                            <constraint firstAttribute="bottom" secondItem="IfQ-6b-8HD" secondAttribute="bottom" id="zpy-lH-UGc"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="bLq-CV-Nvf"/>
+                    <connections>
+                        <outlet property="tableView" destination="IfQ-6b-8HD" id="srg-L8-ZVM"/>
+                        <segue destination="aD0-Jk-4TU" kind="show" identifier="Show SelectTaskPriorityViewController" id="LF5-mz-8Zw"/>
+                        <segue destination="WWV-tW-edY" kind="show" identifier="ShowDatePickerViewController" id="jBm-iR-JFJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X65-Sz-p4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8367" y="1310"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="j6k-qr-rug">
+            <objects>
+                <viewController storyboardIdentifier="DatePickerViewController" automaticallyAdjustsScrollViewInsets="NO" id="WWV-tW-edY" customClass="DatePickerViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mOm-EI-HbL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="gVP-t0-Pfp">
+                                <rect key="frame" x="0.0" y="10" width="414" height="391"/>
+                                <connections>
+                                    <action selector="datePicker:" destination="WWV-tW-edY" eventType="valueChanged" id="zgO-ht-kr8"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wj1-AU-tkV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gVP-t0-Pfp" firstAttribute="leading" secondItem="Wj1-AU-tkV" secondAttribute="leading" id="4gp-ux-mDp"/>
+                            <constraint firstItem="gVP-t0-Pfp" firstAttribute="centerX" secondItem="mOm-EI-HbL" secondAttribute="centerX" id="Cbu-YY-hrw"/>
+                            <constraint firstItem="gVP-t0-Pfp" firstAttribute="top" secondItem="Wj1-AU-tkV" secondAttribute="top" constant="10" id="cTg-Xb-LKe"/>
+                            <constraint firstItem="Wj1-AU-tkV" firstAttribute="trailing" secondItem="gVP-t0-Pfp" secondAttribute="trailing" id="h5O-Te-y5z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OHL-w3-Qth"/>
+                    <connections>
+                        <outlet property="datePicker" destination="gVP-t0-Pfp" id="ijn-0U-0Eb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tWa-Dg-FUU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9138" y="1310"/>
+        </scene>
+        <!--Select Task Priority View Controller-->
+        <scene sceneID="9n8-2n-03L">
+            <objects>
+                <viewController storyboardIdentifier="SelectTaskPriorityViewController" automaticallyAdjustsScrollViewInsets="NO" id="aD0-Jk-4TU" customClass="SelectTaskPriorityViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CUM-JF-2Pa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-t4-EMt" customClass="TableView" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zBo-pm-0g6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ecQ-t4-EMt" firstAttribute="top" secondItem="zBo-pm-0g6" secondAttribute="top" id="J36-VC-aXz"/>
+                            <constraint firstItem="ecQ-t4-EMt" firstAttribute="leading" secondItem="zBo-pm-0g6" secondAttribute="leading" id="Wvd-Nd-ecd"/>
+                            <constraint firstAttribute="bottom" secondItem="ecQ-t4-EMt" secondAttribute="bottom" id="d8F-cC-O91"/>
+                            <constraint firstItem="zBo-pm-0g6" firstAttribute="trailing" secondItem="ecQ-t4-EMt" secondAttribute="trailing" id="nrn-Tr-h9o"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="LnI-YN-oEb"/>
+                    <connections>
+                        <outlet property="tableView" destination="ecQ-t4-EMt" id="pGd-9J-DCy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tV4-R4-AgV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9138" y="2040"/>
+        </scene>
+        <!--Edit Task View Controller-->
+        <scene sceneID="LKw-x2-LHL">
+            <objects>
+                <viewController storyboardIdentifier="EditTaskViewController" automaticallyAdjustsScrollViewInsets="NO" id="rw4-6I-Tkk" customClass="EditTaskViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NaJ-X9-st4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wrd-pU-AtF" customClass="TableView" customModule="ToDoApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YJe-1f-DD9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wrd-pU-AtF" secondAttribute="bottom" id="E5n-IQ-MuO"/>
+                            <constraint firstItem="wrd-pU-AtF" firstAttribute="top" secondItem="YJe-1f-DD9" secondAttribute="top" id="HcP-Bc-3hS"/>
+                            <constraint firstItem="YJe-1f-DD9" firstAttribute="trailing" secondItem="wrd-pU-AtF" secondAttribute="trailing" id="YhH-Yz-Fe9"/>
+                            <constraint firstItem="wrd-pU-AtF" firstAttribute="leading" secondItem="YJe-1f-DD9" secondAttribute="leading" id="dlj-Ec-APV"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="qqq-cI-Ekg"/>
+                    <connections>
+                        <outlet property="tableView" destination="wrd-pU-AtF" id="2qn-uK-ESS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWe-DU-8E4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8367" y="2040"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

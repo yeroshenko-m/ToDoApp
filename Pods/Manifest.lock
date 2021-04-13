@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.4.2)
+  - KeychainSwift (19.0.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - R.swift (5.4.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - ReachabilitySwift (5.0.0)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - KeychainSwift (~> 19.0)
+  - NVActivityIndicatorView
+  - R.swift
+  - ReachabilitySwift
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeychainSwift
+    - NVActivityIndicatorView
+    - R.swift
+    - R.swift.Library
+    - ReachabilitySwift
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: fb59d2ec15e1b22e4a53dd681839d2cc24b2ce64
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20E5186d" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ProjectModel" representedClassName="ProjectModel" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="favorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TaskModel" inverseName="project" inverseEntity="TaskModel"/>
+    </entity>
+    <entity name="TaskModel" representedClassName="TaskModel" syncable="YES">
+        <attribute name="completed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="url" optional="YES" attributeType="URI"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="ProjectModel" inverseName="tasks" inverseEntity="ProjectModel"/>
+    </entity>
+    <elements>
+        <element name="ProjectModel" positionX="13.71337890625" positionY="-407.9904479980468" width="128" height="104"/>
+        <element name="TaskModel" positionX="334.864990234375" positionY="-483.8750915527344" width="128" height="164"/>
+    </elements>
+</model>

@@ -1,0 +1,205 @@
+// Add/edit project screen //
+// Title //
+"edit.project.screen_title.add" = "Создать проект";
+"edit.project.screen_title.edit" = "Изменить проект";
+
+// TableView sections //
+"edit.project.screen_name.section.header" = "Имя проекта";
+"edit.project.screen_name.section.footer" = "Используйте символы a-z, A-Z, 0-9, или специальные символы (?!\":;%$#@).";
+"edit.project.screen_color.section.header" = "Цветовой маркер";
+"edit.project.screen_color.section.footer" = "Выберите один цвет из списка для ярлыка проекта.";
+"edit.project.screen_parent.section.header" = "Родительский проект";
+"edit.project.screen_parent.section.footer" = "Если ваш проект является дочерним по отношению к уже существующему, укажите выберите его из списка.";
+"edit.project.screen_favorite.section.header" = "Избранный проект";
+"edit.project.screen_favorite.section.footer" = "Если проект пометить как избранный, он будет отображен в верхней части списка Ваших проектов.";
+"edit.project.screen_delete.section.header" = "Удалить проект";
+"edit.project.screen_delete.section.footer" = "Внимание! Данное действие будет невозможно отменить, проект будет полностью удален.";
+
+// Cells //
+"edit.project.screen_textfield.cell.placeholder" = "Введите имя проекта";
+"edit.project.screen_color.cell.empty" = "Выберите цвет";
+"edit.project.screen_parent.cell.empty" = "Выберите проект";
+"edit.project.screen_favorite.cell.name" = "Избранный проект";
+
+// Alert //
+"edit.project.screen_alert.empty.name" = "Имя не может быть пустым";
+"edit.project.screen_alert.project.created" = "Новый проект создан";
+"edit.project.screen_alert.project.edited" = "Проект изменен";
+"edit.project.screen_alert.project.action.error" = "Произошла ошибка. Повторите попытку позже.";
+"edit.project.screen_alert.ok" = "ОК";
+
+// Authorization screen //
+// Title //
+"authorization.screen_title" = "Авторизация";
+"authorization.screen_alert.errorMessage" = "Ошибка";
+"authorization.screen_alert.reload.button" = "Перезагрузить страницу";
+
+
+// Projects list screen //
+// Title //
+"projects.list.screen_title" = "Все проекты";
+
+
+// Alerts //
+"projects.list.screen_alert.deleteproject.title" = "Вы действительно хотите удалить проект?";
+"projects.list.screen_alert.confirm.deletion.button" = "Удалить";
+"projects.list.screen_alert.cancel.deletion.button" = "Отмена";
+"projects.list.screen_alert.deleted" = "Удален";
+
+"projects.list.screen_alert.addproject.button" = "Добавить новый проект";
+"projects.list.screen_alert.canceladding.button" = "Отмена";
+
+
+// Add/edit task screen //
+// Title //
+"edit.task.screen_title.add" = "Создать задачу";
+"edit.task.screen_title.edit" = "Изменить задачу";
+
+// Tableview sections //
+"edit.task.screen_name.section.header" = "Название задачи";
+"edit.task.screen_name.section.footer" = "Используйте символы a-z, A-Z, 0-9, или специальные символы (?!\":;%$#@).";
+"edit.task.screen_label.section.header" = "Тег задачи";
+"edit.task.screen_label.section.footer" = "Выберите один из представленных тегов или создайте свой.";
+"edit.task.screen_date.section.header" = "Дедлайн задачи";
+"edit.task.screen_date.section.footer" = "Если задача имеет определенное время для ее выполнения - выберите дату и время, которые будут отображены на ячейке задачи.";
+"edit.task.screen_project.section.header" = "Родительский проект";
+"edit.task.screen_project.section.footer" = "Если ваша задача является частью уже существующего проекта, укажите его как родителя для задачи.";
+"edit.task.screen_priority.section.header" = "Приоритет задачи";
+"edit.task.screen_priority.section.footer" = "Вы можете назначить приоритет для задачи. По умолчанию все задачи имеют низкий приоритет.";
+"edit.task.screen_delete.section.header" = "Удалить задачу";
+"edit.task.screen_delete.section.footer" = "Внимание! Данное действие будет невозможно отменить, задача будет полностью удалена.";
+
+// Cells //
+"edit.task.screen_textfield.cell.placeholder" = "Моя новая задача";
+"edit.task.screen_project.cell.title" = "Выберите проект";
+"edit.task.screen_label.cell.title" = "Выберите теги";
+"edit.task.screen_date.cell.title" = "Выберите дату и время";
+"edit.task.screen_delete.cell.title" = "Удалить";
+
+// Alert //
+"edit.task.screen_alert.empty.name" = "Имя не может быть пустым";
+"edit.task.screen_alert.task.created" = "Задача создана";
+"edit.task.screen_alert.task.edited" = "Задача изменена";
+"edit.task.screen_alert.task.deleted" = "Задача удалена";
+"edit.task.screen_alert.task.action.error" = "Произошла ошибка. Повторите попытку позже.";
+"edit.task.screen_alert.ok" = "ОК";
+"edit.task.screen_delete.confirmation.title" = "Вы действительно хотите удалить задачу?";
+
+
+// Add/edit task screen //
+"add.edit.controllers_reset.barbutton.title" = "Сбросить";
+
+
+// TabBarController //
+// NavItems title //
+"tab.bar.controller_projects.list.title" = "Проекты";
+"tab.bar.controller_tasks.list.title" = "Задачи";
+"tab.bar.controller_settings.title" = "Настройки";
+
+
+// ContextualActions //
+"table.view_contextualaction.delete" = "Удалить";
+"table.view_contextualaction.edit" = "Изменить";
+"table.view_contextualaction.close" = "Закрыть";
+"table.view_contextualaction.make.not.favorite" = "Сделать не избранным";
+"table.view_contextualaction.make.favorite" = "Сделать избранным";
+
+// DatePickerViewController //
+"datepicker.controller_estimating.alert.title" = "Вы не можете запланировать выполнение задачи в прошлом.";
+
+
+// Settings controller //
+"settings.controller_title" = "Настройки";
+"settings.controller_alert.logout.title" = "Вы действительно хотите выйти из аккаунта?";
+"settings.controller_alert.logout.confirm.action.title" = "Выйти";
+"settings.controller_сell.logout.title" = "Выйти";
+
+// TableView sections //
+"settings.controller_logout.section.header" = "Выйти из текущего аккаунта";
+"settings.controller_logout.section.footer" = "После выхода из аккаунта данные ваш логин и пароль будут удалены из устройства.";
+
+
+// All Tasks Controller //
+"all.tasks.controller_title" = "Все задачи";
+
+
+// Priorities //
+"priority_low" = "По умолчaнию";
+"priority_normal" = "Низкий";
+"priority_high" = "Средний";
+"priority_urgent" = "Высокий";
+
+// ProjectSortDescriptors section headers //
+"project.filters.screen_name.section" = "Порядок сортировки по имени";
+"project.filters.screen_favorite.section" = "Порядок сортировки проектов";
+
+// ProjectSortDescriptors description //
+"project.descriptor_name.az" = "По алфавиту A-Z";
+"project.descriptor_name.za" = "По алфавиту Z-A";
+"project.descriptor_favorite.first" = "Избранные сначала";
+"project.descriptor_favorite.last" = "Обычные сначала";
+
+// TaskSortDescriptors section headers //
+"tasks.filters.screen_date.section" = "По дате планировнаия";
+"tasks.filters.screen_creation.section" = "По дате создания";
+"tasks.filters.screen_priority.section" = "По приоритету";
+
+// TaskSortDescriptors description //
+"task.descriptor_name.az" = "По алфавиту A-Z";
+"task.descriptor_name.za" = "По алфавиту Z-A";
+"task.descriptor_date.ascending" = "По возрастанию даты выполнения";
+"task.descriptor_date.descending" = "По убыванию даты выполнения";
+"task.descriptor_created.ascending" = "Сначала созданные недавно";
+"task.descriptor_created.descending" = "Сначала созданные давно";
+"task.descriptor_comments.ascending" = "Сначала меньше комментариев";
+"task.descriptor_comments.descending" = "Сначала больше комментариев";
+"task.descriptor_priority.ascending" = "Сначала менее приоритетные";
+"task.descriptor_priority.descending" = "Сначала более приоритетные";
+
+// Filters screen button titles //
+"filters.screen_reset.title" = "Сбросить";
+"filters.screen_title" = "Изменить порядок";
+
+// Reachability alerts //
+"reachability_offline.title" = "Нет сети";
+"reachability_fetch.projects" = "Будет отображен неактуальный список проектов";
+"reachability_add.project" = "Повторите попытку создать проект позже";
+"reachability_edit.project" = "Повторите попытку редактировать проект позже";
+"reachability_delete.project" = "Повторите попытку удалить проект позже";
+"reachability_add.task" = "Повторите попытку создать задачу позже";
+"reachability_fetch.tasks" = "Будет отображен неактуальный список задач";
+"reachability_edit.task" = "Повторите попытку редактировать задачу позже";
+"reachability_close.task" = "Повторите попытку закрыть задачу позже";
+"reachability_delete.task" = "Повторите попытку удалить задачу позже";
+"reachability_add.logOut" = "Повторите попытку выйти из аккаунта позже";
+
+// Empty tableviews //
+"tableview_no.tasks.title" = "Здесь нет ни одной задачи";
+"tableview_no.tasks.message" = "Вы можете создать задачу, нажав кнопку '+' ниже";
+"tableview_no.projects.title" = "Здесь нет ни одного проекта";
+"tableview_no.projects.message" = "Вы можете создать проект, нажав кнопку '+' ниже";
+
+// NoNetworkView //
+"no.network.view_title" = "Нет сети. Невозможно обновить данные";
+
+// SearchBar titles //
+"search.bar_project" = "Найти проект";
+"search.bar_task" = "Найти задачу";
+
+// Errors //
+// Auth error //
+"auth.error_empty.token" = "Невозможно получить токен авторизации. Попробуйте позже";
+"auth.error_not.valid.url" = "Ошибка ссылки авторизации. Попробуйте позже";
+"auth.error_invalid.grands" = "Ошибка";
+
+
+// WCSession Errors //
+"watch.session_encoding.failed" = "Произошла ошибка при подготовке данных для Ваших watch. Данные на watch устройстве останутся без изменений";
+"watch.session_decoding.failed" = "Произошла ошибка при подготовке данных для Ваших watch. Данные на watch устройстве останутся без изменений";
+"watch.session_context.updating.failed" = "Не удалось синхронизировать данные с Вашими watch. Данные на watch устройстве останутся без изменений";
+
+
+// SplitMenu sections
+"split.menu_all.projects" = "Проекты";
+"split.menu_all.tasks" = "Задачи";
+"split.menu_settings" = "Настройки";

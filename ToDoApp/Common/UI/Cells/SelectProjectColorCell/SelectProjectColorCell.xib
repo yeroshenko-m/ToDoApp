@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SelectProjectColorCell" id="KGk-i7-Jjw" customClass="SelectProjectColorCell" customModule="ToDoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="293" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DrG-Fa-H87">
+                        <rect key="frame" x="15" y="7" width="30" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="DrG-Fa-H87" secondAttribute="height" multiplier="1:1" id="7NW-9S-neE"/>
+                            <constraint firstAttribute="height" constant="30" id="JdN-Bs-AhX"/>
+                            <constraint firstAttribute="width" constant="30" id="yVj-TH-RSw"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qEJ-A1-kNr">
+                        <rect key="frame" x="60" y="-0.5" width="41.5" height="45"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qEJ-A1-kNr" firstAttribute="leading" secondItem="DrG-Fa-H87" secondAttribute="trailing" constant="15" id="6MY-PK-7Nz"/>
+                    <constraint firstItem="DrG-Fa-H87" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DGi-Du-A1k"/>
+                    <constraint firstItem="qEJ-A1-kNr" firstAttribute="height" secondItem="DrG-Fa-H87" secondAttribute="height" multiplier="1.5" id="YsE-K8-wDg"/>
+                    <constraint firstItem="qEJ-A1-kNr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cMq-Pk-1hp"/>
+                    <constraint firstItem="DrG-Fa-H87" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="kyH-8R-OBA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qEJ-A1-kNr" secondAttribute="trailing" constant="20" id="ZfH-D7-hxR"/>
+            </constraints>
+            <connections>
+                <outlet property="colorPreviewView" destination="DrG-Fa-H87" id="TxN-Ie-C6O"/>
+                <outlet property="menuItemNameLabel" destination="qEJ-A1-kNr" id="wtY-hl-1v2"/>
+            </connections>
+            <point key="canvasLocation" x="-90" y="134"/>
+        </tableViewCell>
+    </objects>
+</document>

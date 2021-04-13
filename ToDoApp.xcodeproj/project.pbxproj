@@ -1,0 +1,2476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C00AF4625B6F32B00F50FBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00AF4525B6F32B00F50FBD /* AppDelegate.swift */; };
+		2C00AF4825B6F32B00F50FBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00AF4725B6F32B00F50FBD /* SceneDelegate.swift */; };
+		2C00AF4A25B6F32C00F50FBD /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00AF4925B6F32C00F50FBD /* AuthViewController.swift */; };
+		2C00AF4D25B6F32C00F50FBD /* Projectslist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C00AF4B25B6F32C00F50FBD /* Projectslist.storyboard */; };
+		2C00AF5025B6F32C00F50FBD /* ToDoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C00AF4E25B6F32C00F50FBD /* ToDoApp.xcdatamodeld */; };
+		2C00AF5225B6F33100F50FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C00AF5125B6F33100F50FBD /* Assets.xcassets */; };
+		2C00AF5525B6F33100F50FBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C00AF5325B6F33100F50FBD /* LaunchScreen.storyboard */; };
+		2C019F5B25E533980098DBD5 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C019F5A25E533980098DBD5 /* Project.swift */; };
+		2C019F6125E5458C0098DBD5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C019F6025E5458C0098DBD5 /* Task.swift */; };
+		2C0B84B32600F83E00AF8A99 /* ProjectFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B84B22600F83E00AF8A99 /* ProjectFiltersViewController.swift */; };
+		2C0B84B92601190300AF8A99 /* ProjectFiltersInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B84B82601190300AF8A99 /* ProjectFiltersInteractorImpl.swift */; };
+		2C0B84BC2601191300AF8A99 /* ProjectFiltersPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B84BB2601191300AF8A99 /* ProjectFiltersPresenterImpl.swift */; };
+		2C0E5EE7261DA86D006B84A2 /* SplitViewMasterScreenSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0E5EE6261DA86D006B84A2 /* SplitViewMasterScreenSections.swift */; };
+		2C0E5F01261DD5AA006B84A2 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0E5F00261DD5AA006B84A2 /* SplitViewController.swift */; };
+		2C0E5F15261E1083006B84A2 /* MainSplitCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0E5F14261E1083006B84A2 /* MainSplitCoordinatorProtocol.swift */; };
+		2C18039A25E51A4800DDA782 /* NSmanagedObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18039925E51A4800DDA782 /* NSmanagedObject+Extension.swift */; };
+		2C18E44E261F3E6800C15B87 /* ProjectCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C18E44D261F3E6800C15B87 /* ProjectCellController.swift */; };
+		2C19B1A625FA78A000FC1BBA /* TasksListCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19B1A525FA78A000FC1BBA /* TasksListCoordinatorImpl.swift */; };
+		2C19B1AC25FA7B7700FC1BBA /* AddTaskCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19B1AB25FA7B7700FC1BBA /* AddTaskCoordinatorImpl.swift */; };
+		2C19B1AF25FA7BEB00FC1BBA /* EditTaskCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C19B1AE25FA7BEB00FC1BBA /* EditTaskCoordinatorImpl.swift */; };
+		2C1B65EF25C2AB270046EA6A /* TableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B65EE25C2AB270046EA6A /* TableViewSection.swift */; };
+		2C1B65F225C2AFEC0046EA6A /* ColorCellDisplayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B65F125C2AFEC0046EA6A /* ColorCellDisplayObject.swift */; };
+		2C1B660125C2BE330046EA6A /* SelectProjectColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B65FF25C2BE330046EA6A /* SelectProjectColorCell.swift */; };
+		2C1B660225C2BE330046EA6A /* SelectProjectColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1B660025C2BE330046EA6A /* SelectProjectColorCell.xib */; };
+		2C1B660525C2CF4B0046EA6A /* SelectProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B660425C2CF4B0046EA6A /* SelectProjectViewController.swift */; };
+		2C1EE25C25FB594E00589C07 /* SettingsCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1EE25B25FB594E00589C07 /* SettingsCoordinatorImpl.swift */; };
+		2C1EE27825FE3D1A00589C07 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1EE27725FE3D1A00589C07 /* SearchController.swift */; };
+		2C1EE28325FE8CDD00589C07 /* ToDoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1EE28225FE8CDD00589C07 /* ToDoObject.swift */; };
+		2C206C52261F5A74005D0316 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C019F6025E5458C0098DBD5 /* Task.swift */; };
+		2C206C56261F5A76005D0316 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C019F5A25E533980098DBD5 /* Project.swift */; };
+		2C206C7C261F5E92005D0316 /* MainMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C206C7B261F5E92005D0316 /* MainMenuItem.swift */; };
+		2C268E7C25F134F800340CEF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C268E7B25F134F800340CEF /* BaseView.swift */; };
+		2C268E9325F231FE00340CEF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C268E9225F231FE00340CEF /* BaseViewController.swift */; };
+		2C268E9625F23A7C00340CEF /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C268E9525F23A7C00340CEF /* TableView.swift */; };
+		2C268E9D25F249E500340CEF /* ProjectsListPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C268E9C25F249E500340CEF /* ProjectsListPresenterImpl.swift */; };
+		2C268EA125F24C6D00340CEF /* ProjectsListInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C268EA025F24C6D00340CEF /* ProjectsListInteractorImpl.swift */; };
+		2C27874825C0A2AA00FA8814 /* SelectOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C27874625C0A2AA00FA8814 /* SelectOptionCell.swift */; };
+		2C27874925C0A2AA00FA8814 /* SelectOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C27874725C0A2AA00FA8814 /* SelectOptionCell.xib */; };
+		2C27874C25C0AB1000FA8814 /* NetworkUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C27874B25C0AB1000FA8814 /* NetworkUtilities.swift */; };
+		2C2E000225F8CF3600E4357C /* TaskModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E000025F8CF3600E4357C /* TaskModel+CoreDataProperties.swift */; };
+		2C2E000325F8CF3600E4357C /* TaskModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E000125F8CF3600E4357C /* TaskModel+CoreDataClass.swift */; };
+		2C2EFFFD25F8CF2F00E4357C /* ProjectModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EFFFB25F8CF2F00E4357C /* ProjectModel+CoreDataClass.swift */; };
+		2C2EFFFE25F8CF2F00E4357C /* ProjectModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EFFFC25F8CF2F00E4357C /* ProjectModel+CoreDataProperties.swift */; };
+		2C3000C225FA01BC00EBA644 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3000C125FA01BC00EBA644 /* NavController.swift */; };
+		2C3000C525FA278C00EBA644 /* EditProjectCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3000C425FA278C00EBA644 /* EditProjectCoordinatorImpl.swift */; };
+		2C3000C825FA2D0F00EBA644 /* AddProjectCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3000C725FA2D0F00EBA644 /* AddProjectCoordinatorImpl.swift */; };
+		2C3201C72619F69A005C348D /* EditProjectCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3201C62619F69A005C348D /* EditProjectCoordinatorProtocol.swift */; };
+		2C3201CA2619F781005C348D /* AddProjectCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3201C92619F781005C348D /* AddProjectCoordinatorProtocol.swift */; };
+		2C3201D52619F9B0005C348D /* AddEditTaskCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3201D42619F9B0005C348D /* AddEditTaskCoordinatorProtocol.swift */; };
+		2C3201D82619F9E1005C348D /* UpdatableWithTaskInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3201D72619F9E1005C348D /* UpdatableWithTaskInfoProtocol.swift */; };
+		2C3201DF2619FBE9005C348D /* EditTaskCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3201DE2619FBE9005C348D /* EditTaskCoordinatorProtocol.swift */; };
+		2C3201E22619FC08005C348D /* AddTaskCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3201E12619FC08005C348D /* AddTaskCoordinatorProtocol.swift */; };
+		2C3201E52619FC99005C348D /* TaskListCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3201E42619FC99005C348D /* TaskListCoordinatorProtocol.swift */; };
+		2C3201E92619FCEC005C348D /* SettingsCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3201E82619FCEC005C348D /* SettingsCoordinatorProtocol.swift */; };
+		2C3201F3261A0297005C348D /* ReachabilityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3201F2261A0297005C348D /* ReachabilityError.swift */; };
+		2C3201F7261A04CF005C348D /* DTOCastingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3201F6261A04CF005C348D /* DTOCastingError.swift */; };
+		2C3201FA261A053C005C348D /* TokenStorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3201F9261A053C005C348D /* TokenStorageError.swift */; };
+		2C3201FD261A05CC005C348D /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3201FC261A05CC005C348D /* AuthError.swift */; };
+		2C320201261A066E005C348D /* ProjectsServiceDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C320200261A066E005C348D /* ProjectsServiceDelegateProtocol.swift */; };
+		2C320204261A06C6005C348D /* ProjectsOrderingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C320203261A06C6005C348D /* ProjectsOrderingType.swift */; };
+		2C32020B261A086D005C348D /* CompletionTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C32020A261A086D005C348D /* CompletionTypealias.swift */; };
+		2C320214261A1229005C348D /* SpeechRecognitionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C320213261A1229005C348D /* SpeechRecognitionStatus.swift */; };
+		2C36D9D126170FD60041BF5D /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36D9D026170FD60041BF5D /* Pulsing.swift */; };
+		2C36D9D5261716050041BF5D /* SpeechRecognitionAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36D9D4261716050041BF5D /* SpeechRecognitionAvailability.swift */; };
+		2C36D9D8261716150041BF5D /* SpeechRecognitionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36D9D7261716150041BF5D /* SpeechRecognitionError.swift */; };
+		2C390B1825E9340800F959A0 /* TasksServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C390B1725E9340800F959A0 /* TasksServiceProtocol.swift */; };
+		2C390B2425E960A200F959A0 /* StorageManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C390B2325E960A200F959A0 /* StorageManagerError.swift */; };
+		2C3941F825D947E5003E8FC5 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3941F725D947E5003E8FC5 /* ActivityView.swift */; };
+		2C4C7F24261F171D00DAD86E /* TaskDetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C7F23261F171D00DAD86E /* TaskDetailsInterfaceController.swift */; };
+		2C4C7F38261F2BA500DAD86E /* WKInterfaceController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C7F37261F2BA500DAD86E /* WKInterfaceController+Extension.swift */; };
+		2C4C7F50261F2E4100DAD86E /* InterfaceControllerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C7F4F261F2E4100DAD86E /* InterfaceControllerList.swift */; };
+		2C52058A25E19DBD00C28447 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52058925E19DBD00C28447 /* CoreDataStack.swift */; };
+		2C52058E25E19E0C00C28447 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52058D25E19E0C00C28447 /* StorageManager.swift */; };
+		2C52C55126024A5B00F5817B /* ProjectsOrderStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52C55026024A5B00F5817B /* ProjectsOrderStorage.swift */; };
+		2C52C5572602528900F5817B /* TasksOrderStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52C5562602528900F5817B /* TasksOrderStorage.swift */; };
+		2C5C4C6126038F820000E77D /* TasksListFiltersInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5C4C6026038F820000E77D /* TasksListFiltersInteractorImpl.swift */; };
+		2C5C4C6526038F8C0000E77D /* TasksListFiltersPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5C4C6426038F8C0000E77D /* TasksListFiltersPresenterImpl.swift */; };
+		2C5C4C6826038F990000E77D /* TasksListFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5C4C6726038F990000E77D /* TasksListFiltersViewController.swift */; };
+		2C5C4C6C2603CECA0000E77D /* TaskSectionsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5C4C6B2603CECA0000E77D /* TaskSectionsMapper.swift */; };
+		2C61564025CC7D38005F385D /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61563F25CC7D38005F385D /* UICollectionView+Extension.swift */; };
+		2C61564325CC7D5F005F385D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61564225CC7D5F005F385D /* UIColor+Extension.swift */; };
+		2C61A79225F42DC800CF518D /* SelectTaskPriorityPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A79125F42DC800CF518D /* SelectTaskPriorityPresenterImpl.swift */; };
+		2C61A79625F42DE000CF518D /* SelectTaskPriorityInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A79525F42DE000CF518D /* SelectTaskPriorityInteractorImpl.swift */; };
+		2C61A7A325F4C74100CF518D /* DatePickerPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A7A225F4C74100CF518D /* DatePickerPresenterImpl.swift */; };
+		2C61A7AD25F4C75200CF518D /* DatePickerInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A7AC25F4C75200CF518D /* DatePickerInteractorImpl.swift */; };
+		2C61A7B325F5174400CF518D /* SelectProjectColorInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A7B225F5174400CF518D /* SelectProjectColorInteractorImpl.swift */; };
+		2C61A7B625F5175200CF518D /* SelectProjectColorPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A7B525F5175200CF518D /* SelectProjectColorPresenterImpl.swift */; };
+		2C61A7B925F528DF00CF518D /* ProjectDetailsInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A7B825F528DF00CF518D /* ProjectDetailsInteractorImpl.swift */; };
+		2C61A7BC25F528E900CF518D /* ProjectDetailsPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A7BB25F528E900CF518D /* ProjectDetailsPresenterImpl.swift */; };
+		2C61A7C125F6B16F00CF518D /* SettingsPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A7C025F6B16F00CF518D /* SettingsPresenterImpl.swift */; };
+		2C61A7C425F6B18500CF518D /* SettingsInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A7C325F6B18500CF518D /* SettingsInteractorImpl.swift */; };
+		2C61A7C825F6D28400CF518D /* AddTaskInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A7C725F6D28400CF518D /* AddTaskInteractorImpl.swift */; };
+		2C61A7CB25F6D31A00CF518D /* AddTaskPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61A7CA25F6D31A00CF518D /* AddTaskPresenterImpl.swift */; };
+		2C644CA825E5719A005EF9F8 /* DataTransferObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C644CA725E5719A005EF9F8 /* DataTransferObject.swift */; };
+		2C644CAB25E5737C005EF9F8 /* DTOConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C644CAA25E5737C005EF9F8 /* DTOConfigurable.swift */; };
+		2C64A73125E7E8FE00AD7C72 /* TaskFilteringPredicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C64A73025E7E8FE00AD7C72 /* TaskFilteringPredicates.swift */; };
+		2C64A73A25E7EF8600AD7C72 /* TaskSortDescriptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C64A73925E7EF8600AD7C72 /* TaskSortDescriptors.swift */; };
+		2C65FFB025D9ABE700A4C085 /* AuthErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C65FFAF25D9ABE700A4C085 /* AuthErrorModel.swift */; };
+		2C67026725F12AFB007B80E6 /* AuthPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C67026625F12AFB007B80E6 /* AuthPresenterImpl.swift */; };
+		2C67026B25F12B0D007B80E6 /* AuthInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C67026A25F12B0D007B80E6 /* AuthInteractorImpl.swift */; };
+		2C6876D825C322C90058ADB7 /* ProjectRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6876D725C322C90058ADB7 /* ProjectRequestParams.swift */; };
+		2C6876DE25C326500058ADB7 /* ColorCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6876DC25C326500058ADB7 /* ColorCVCell.swift */; };
+		2C6876DF25C326500058ADB7 /* ColorCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6876DD25C326500058ADB7 /* ColorCVCell.xib */; };
+		2C6E3A0125D2F7CC00652B8D /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E3A0025D2F7CC00652B8D /* DatePickerViewController.swift */; };
+		2C6E3A2F25D429A400652B8D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E3A2E25D429A400652B8D /* MainTabBarController.swift */; };
+		2C6E3A3325D43B7400652B8D /* TasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E3A3225D43B7400652B8D /* TasksListViewController.swift */; };
+		2C6E3A3625D444BA00652B8D /* Taskslist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E3A3525D444BA00652B8D /* Taskslist.storyboard */; };
+		2C6E3A4A25D54F8E00652B8D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6E3A4925D54F8E00652B8D /* SettingsViewController.swift */; };
+		2C6E3A4D25D54FA500652B8D /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E3A4C25D54FA500652B8D /* Settings.storyboard */; };
+		2C6E3A5225D5A53F00652B8D /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6E3A5125D5A53F00652B8D /* Icons.xcassets */; };
+		2C6FA2AF261CFCB600BEF76B /* SplitMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FA2AE261CFCB600BEF76B /* SplitMenuViewController.swift */; };
+		2C6FA2B4261CFCD200BEF76B /* Splitmenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6FA2B3261CFCD200BEF76B /* Splitmenu.storyboard */; };
+		2C6FA2BA261CFE9C00BEF76B /* SplitViewMenuInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FA2B9261CFE9C00BEF76B /* SplitViewMenuInteractorImpl.swift */; };
+		2C6FA2C5261CFEC500BEF76B /* SplitViewMenuPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6FA2C4261CFEC500BEF76B /* SplitViewMenuPresenterImpl.swift */; };
+		2C70FE322615BC1B003F862E /* SpeechRecognitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C70FE312615BC1B003F862E /* SpeechRecognitionManager.swift */; };
+		2C70FE3D2615BEA7003F862E /* SpeechRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C70FE3C2615BEA7003F862E /* SpeechRecordButton.swift */; };
+		2C75CD7225CC25D2007C7FB2 /* ProjectCellDisplayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75CD7125CC25D2007C7FB2 /* ProjectCellDisplayObject.swift */; };
+		2C78467E25E3D59300875168 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C78467D25E3D59300875168 /* DateFormatter+Extension.swift */; };
+		2C7E332525CFC56A00DC111A /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7E332425CFC56A00DC111A /* Auth.storyboard */; };
+		2C81153C261F66450095548F /* ToDoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1EE28225FE8CDD00589C07 /* ToDoObject.swift */; };
+		2C834238261CCAEA003DCDF6 /* MacSplitCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C834237261CCAEA003DCDF6 /* MacSplitCoordinatorImpl.swift */; };
+		2C8552BB25D034C400163097 /* Projectdetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8552BA25D034C400163097 /* Projectdetails.storyboard */; };
+		2C8552C125D07F9F00163097 /* EditProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8552C025D07F9F00163097 /* EditProjectViewController.swift */; };
+		2C86E454260A34E200DFB3F1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86E453260A34E200DFB3F1 /* HealthKit.framework */; };
+		2C86E45C260B600E00DFB3F1 /* NoNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86E45B260B600E00DFB3F1 /* NoNetworkView.swift */; };
+		2C9AA41725C025470045CCFE /* ProjectsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AA41625C025470045CCFE /* ProjectsListViewController.swift */; };
+		2C9AA41D25C0296C0045CCFE /* ProjectsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AA41C25C0296C0045CCFE /* ProjectsService.swift */; };
+		2C9AA42025C02B0F0045CCFE /* ProjectDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AA41F25C02B0F0045CCFE /* ProjectDTO.swift */; };
+		2C9AA42425C02B700045CCFE /* TodoistColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AA42325C02B700045CCFE /* TodoistColor.swift */; };
+		2C9CBBC625CD490D00FC9F13 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CBBC525CD490D00FC9F13 /* EditTaskViewController.swift */; };
+		2C9CBBCB25CD516000FC9F13 /* DeleteButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CBBC925CD516000FC9F13 /* DeleteButtonCell.swift */; };
+		2C9CBBCC25CD516000FC9F13 /* DeleteButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9CBBCA25CD516000FC9F13 /* DeleteButtonCell.xib */; };
+		2C9CBBD125CD535700FC9F13 /* DeleteButtonDisplayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CBBD025CD535700FC9F13 /* DeleteButtonDisplayObject.swift */; };
+		2C9CBBD525CD554200FC9F13 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CBBD425CD554200FC9F13 /* UIViewController+Extension.swift */; };
+		2C9D855725F7A2C000DF06F4 /* AddEditProjectScreenSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9D855625F7A2C000DF06F4 /* AddEditProjectScreenSections.swift */; };
+		2C9D855A25F7A2F700DF06F4 /* AddProjectInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9D855925F7A2F700DF06F4 /* AddProjectInteractorImpl.swift */; };
+		2C9D855D25F7A37E00DF06F4 /* AddProjectPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9D855C25F7A37E00DF06F4 /* AddProjectPresenterImpl.swift */; };
+		2C9D856025F7A61700DF06F4 /* EditProjectPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9D855F25F7A61700DF06F4 /* EditProjectPresenterImpl.swift */; };
+		2C9D856325F7A64B00DF06F4 /* EditProjectInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9D856225F7A64B00DF06F4 /* EditProjectInteractorImpl.swift */; };
+		2C9D856625F7AB2A00DF06F4 /* TasksListPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9D856525F7AB2A00DF06F4 /* TasksListPresenterImpl.swift */; };
+		2C9D856925F7AB3500DF06F4 /* TasksListInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9D856825F7AB3500DF06F4 /* TasksListInteractorImpl.swift */; };
+		2C9FC9F3262305360007F6ED /* TodoistColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AA42325C02B700045CCFE /* TodoistColor.swift */; };
+		2C9FC9F7262305420007F6ED /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61564225CC7D5F005F385D /* UIColor+Extension.swift */; };
+		2C9FC9FC262313EE0007F6ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C9FC9FB262313EE0007F6ED /* Localizable.strings */; };
+		2C9FCA1726233C890007F6ED /* EmptySectionRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9FCA1626233C890007F6ED /* EmptySectionRowController.swift */; };
+		2C9FCA2426235EB20007F6ED /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9FCA2326235EB20007F6ED /* MulticastDelegate.swift */; };
+		2C9FCA2826236F450007F6ED /* Bool+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE175B825D68C3100D38F51 /* Bool+Extension.swift */; };
+		2C9FCA2D262377AA0007F6ED /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9FCA2C262377AA0007F6ED /* Notification+Extension.swift */; };
+		2C9FCA32262389610007F6ED /* TasksServiceDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9FCA31262389610007F6ED /* TasksServiceDelegateProtocol.swift */; };
+		2CA09BE925EE69440001E690 /* TasksLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA09BE825EE69440001E690 /* TasksLocalService.swift */; };
+		2CA09BEC25EE6B9E0001E690 /* TasksRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA09BEB25EE6B9E0001E690 /* TasksRemoteService.swift */; };
+		2CA180CA25ED039A0020BE72 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA180C925ED039A0020BE72 /* NetworkManager.swift */; };
+		2CA180D225ED03A40020BE72 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA180CC25ED03A40020BE72 /* EndPointType.swift */; };
+		2CA180D525ED03A40020BE72 /* EndPointTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA180CF25ED03A40020BE72 /* EndPointTypeProtocol.swift */; };
+		2CA180E225ED6C120020BE72 /* ProjectsLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA180E125ED6C120020BE72 /* ProjectsLocalService.swift */; };
+		2CA180E525ED6C2B0020BE72 /* ProjectsRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA180E425ED6C2B0020BE72 /* ProjectsRemoteService.swift */; };
+		2CA2B8C7262062C600C8862C /* WatchDataTypeSyncKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B8C6262062C600C8862C /* WatchDataTypeSyncKey.swift */; };
+		2CA2B8CB262062DC00C8862C /* WatchDataTypeSyncKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B8C6262062C600C8862C /* WatchDataTypeSyncKey.swift */; };
+		2CA2B8D0262064A000C8862C /* WatchConnectivityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B8CF262064A000C8862C /* WatchConnectivityError.swift */; };
+		2CA39B9F2619ED0B00937DA2 /* AppCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA39B9E2619ED0B00937DA2 /* AppCoordinatorProtocol.swift */; };
+		2CA39BA22619ED5700937DA2 /* AuthCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA39BA12619ED5700937DA2 /* AuthCoordinatorProtocol.swift */; };
+		2CA39BA72619EE8000937DA2 /* AuthCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA39BA62619EE8000937DA2 /* AuthCoordinatorType.swift */; };
+		2CA39BAA2619EEF100937DA2 /* TabBarCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA39BA92619EEF100937DA2 /* TabBarCoordinatorProtocol.swift */; };
+		2CA39BB42619F07900937DA2 /* ProjectsListCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA39BB32619F07900937DA2 /* ProjectsListCoordinatorProtocol.swift */; };
+		2CA39BB82619F29B00937DA2 /* AddEditProjectCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA39BB72619F29B00937DA2 /* AddEditProjectCoordinatorProtocol.swift */; };
+		2CA39BBB2619F46400937DA2 /* UpdatableWithProjectInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA39BBA2619F46400937DA2 /* UpdatableWithProjectInfoProtocol.swift */; };
+		2CA63D3325E41FC000E4345A /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA63D3225E41FC000E4345A /* Array+Extensions.swift */; };
+		2CADE07225B85BED00C7DD9B /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADE07125B85BED00C7DD9B /* Token.swift */; };
+		2CADE07525B85C0800C7DD9B /* TokenStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADE07425B85C0800C7DD9B /* TokenStorageManager.swift */; };
+		2CADE07825B85C2B00C7DD9B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADE07725B85C2B00C7DD9B /* AuthService.swift */; };
+		2CB6FB7125CEC35500412692 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB6FB7025CEC35500412692 /* NSObject+Extension.swift */; };
+		2CB6FB7925CEC4E400412692 /* UIView+NibLoadable+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB6FB7825CEC4E400412692 /* UIView+NibLoadable+ReusableView.swift */; };
+		2CB6FB8D25CEC6E100412692 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB6FB8C25CEC6E100412692 /* Storyboards.swift */; };
+		2CB6FB9525CEE03700412692 /* AuthTokenRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB6FB9425CEE03700412692 /* AuthTokenRequestParams.swift */; };
+		2CB7A80F25E6527A007111E9 /* ProjectsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7A80E25E6527A007111E9 /* ProjectsServiceProtocol.swift */; };
+		2CB7A81325E6529F007111E9 /* ProjectFilteringPredicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7A81225E6529F007111E9 /* ProjectFilteringPredicates.swift */; };
+		2CB7A81625E652B8007111E9 /* ProjectSortDescriptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7A81525E652B8007111E9 /* ProjectSortDescriptors.swift */; };
+		2CB7A81A25E65309007111E9 /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB7A81925E65309007111E9 /* AuthServiceProtocol.swift */; };
+		2CBC27022609F06200C038AF /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC27012609F06200C038AF /* ReachabilityManager.swift */; };
+		2CC9CE7A25BDC8F6001EB69E /* NibLoadableProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9CE7925BDC8F6001EB69E /* NibLoadableProtocol+Extension.swift */; };
+		2CC9CE8825BDF605001EB69E /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9CE8625BDF605001EB69E /* ProjectCell.swift */; };
+		2CC9CE8925BDF605001EB69E /* ProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9CE8725BDF605001EB69E /* ProjectCell.xib */; };
+		2CC9CE9025BEC08A001EB69E /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9CE8E25BEC08A001EB69E /* TaskCell.swift */; };
+		2CC9CE9125BEC08A001EB69E /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9CE8F25BEC08A001EB69E /* TaskCell.xib */; };
+		2CC9CEC825BF3978001EB69E /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9CEC725BF3978001EB69E /* AddProjectViewController.swift */; };
+		2CC9CECE25BF406D001EB69E /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9CECC25BF406D001EB69E /* TextFieldCell.swift */; };
+		2CC9CECF25BF406D001EB69E /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9CECD25BF406D001EB69E /* TextFieldCell.xib */; };
+		2CC9CEDC25BF46EF001EB69E /* ToggleButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9CEDA25BF46EF001EB69E /* ToggleButtonCell.swift */; };
+		2CC9CEDD25BF46EF001EB69E /* ToggleButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9CEDB25BF46EF001EB69E /* ToggleButtonCell.xib */; };
+		2CCB4E7626026BAF0091C3DB /* ProjectDetailsFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB4E7526026BAF0091C3DB /* ProjectDetailsFiltersViewController.swift */; };
+		2CCB4E7A26026C560091C3DB /* ProjectDetailsFiltersInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB4E7926026C560091C3DB /* ProjectDetailsFiltersInteractorImpl.swift */; };
+		2CCB4E7E26026C600091C3DB /* ProjectDetailsFiltersPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB4E7D26026C600091C3DB /* ProjectDetailsFiltersPresenterImpl.swift */; };
+		2CD17BD225F9313C00BB8BFF /* AuthCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD17BD125F9313C00BB8BFF /* AuthCoordinatorImpl.swift */; };
+		2CD17BD525F933C100BB8BFF /* TabBarCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD17BD425F933C100BB8BFF /* TabBarCoordinatorImpl.swift */; };
+		2CD2E228262066EB00F07319 /* TaskSectionsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5C4C6B2603CECA0000E77D /* TaskSectionsMapper.swift */; };
+		2CD2E23F262067BC00F07319 /* TasksListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2E23E262067BC00F07319 /* TasksListSection.swift */; };
+		2CD2E243262067C400F07319 /* TasksListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2E23E262067BC00F07319 /* TasksListSection.swift */; };
+		2CD2E247262067D500F07319 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA63D3225E41FC000E4345A /* Array+Extensions.swift */; };
+		2CD2E2542621956A00F07319 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2E2532621956A00F07319 /* Date+Extension.swift */; };
+		2CD2E2582621960000F07319 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2E2532621956A00F07319 /* Date+Extension.swift */; };
+		2CD2E25F26219C6100F07319 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C78467D25E3D59300875168 /* DateFormatter+Extension.swift */; };
+		2CD2E26426219E7000F07319 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2E26326219E7000F07319 /* StorageManager.swift */; };
+		2CD2E26926220F7200F07319 /* BaseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD2E26826220F7200F07319 /* BaseInterfaceController.swift */; };
+		2CD2F0B125DEB998009D2D12 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD2F0B025DEB998009D2D12 /* Colors.xcassets */; };
+		2CD43A42261F945400D0AB59 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB6FB7025CEC35500412692 /* NSObject+Extension.swift */; };
+		2CD43A50261F955700D0AB59 /* WKInterfaceTable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43A4F261F955700D0AB59 /* WKInterfaceTable+Extension.swift */; };
+		2CD43A5E261F962E00D0AB59 /* RowControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43A5D261F962E00D0AB59 /* RowControllerType.swift */; };
+		2CD43A7C261F9EF400D0AB59 /* TaskCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43A7B261F9EF400D0AB59 /* TaskCellController.swift */; };
+		2CD43A81261F9F0F00D0AB59 /* MainMenuCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43A80261F9F0F00D0AB59 /* MainMenuCellController.swift */; };
+		2CD43A86261F9F2700D0AB59 /* TableSectionCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD43A85261F9F2700D0AB59 /* TableSectionCellController.swift */; };
+		2CD90B6D25F923D0000C8DA2 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD90B6C25F923D0000C8DA2 /* CoordinatorProtocol.swift */; };
+		2CD90B7025F9241E000C8DA2 /* AppCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD90B6F25F9241E000C8DA2 /* AppCoordinatorImpl.swift */; };
+		2CD90B7325F92571000C8DA2 /* ProjectsListCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD90B7225F92571000C8DA2 /* ProjectsListCoordinatorImpl.swift */; };
+		2CDAC98E261F00C200B5AC34 /* MainInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAC98D261F00C200B5AC34 /* MainInterfaceController.swift */; };
+		2CDAC9A4261F056C00B5AC34 /* ProjectsListInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAC9A3261F056C00B5AC34 /* ProjectsListInterfaceController.swift */; };
+		2CDAC9A9261F05CE00B5AC34 /* ProjectDetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAC9A8261F05CE00B5AC34 /* ProjectDetailsInterfaceController.swift */; };
+		2CDAC9AE261F063500B5AC34 /* TasksListInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAC9AD261F063500B5AC34 /* TasksListInterfaceController.swift */; };
+		2CDAC9B3261F066400B5AC34 /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDAC9B2261F066400B5AC34 /* ScheduleInterfaceController.swift */; };
+		2CDC204925F798F000718859 /* AddEditTaskScreenSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC204825F798F000718859 /* AddEditTaskScreenSections.swift */; };
+		2CDC204C25F79A0A00718859 /* EditTaskPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC204B25F79A0A00718859 /* EditTaskPresenterImpl.swift */; };
+		2CDC204F25F79A4F00718859 /* EditTaskInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDC204E25F79A4F00718859 /* EditTaskInteractorImpl.swift */; };
+		2CDEB12E25CFFDDD00BB3C5A /* AuthCodeRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDEB12D25CFFDDD00BB3C5A /* AuthCodeRequestParams.swift */; };
+		2CDFF32F25D2DD0900CCBADD /* TaskDueDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDFF32E25D2DD0900CCBADD /* TaskDueDate.swift */; };
+		2CE153FD25BF4B8E007A3394 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE153FC25BF4B8E007A3394 /* UITableView+Extension.swift */; };
+		2CE1540025C01525007A3394 /* SelectProjectColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE153FF25C01525007A3394 /* SelectProjectColorViewController.swift */; };
+		2CE175B925D68C3100D38F51 /* Bool+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE175B825D68C3100D38F51 /* Bool+Extension.swift */; };
+		2CE417F625F37AC0002A9915 /* SelectProjectInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE417F525F37AC0002A9915 /* SelectProjectInteractorImpl.swift */; };
+		2CE417F925F37ACB002A9915 /* SelectProjectPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE417F825F37ACB002A9915 /* SelectProjectPresenterImpl.swift */; };
+		2CE83D9925BB27620039F611 /* ReusableViewProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE83D9825BB27620039F611 /* ReusableViewProtocol+Extension.swift */; };
+		2CE83D9C25BB29610039F611 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE83D9B25BB29610039F611 /* AddButton.swift */; };
+		2CE924A125C6FDB500CAD487 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CE924A325C6FDB500CAD487 /* Localizable.strings */; };
+		2CE924B625C7024F00CAD487 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE924B525C7024F00CAD487 /* R.generated.swift */; };
+		2CEADF0A261AFEC800B2B89B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CEADF08261AFEC800B2B89B /* Interface.storyboard */; };
+		2CEADF0C261AFED100B2B89B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEADF0B261AFED100B2B89B /* Assets.xcassets */; };
+		2CEADF13261AFED100B2B89B /* ToDoWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2CEADF12261AFED100B2B89B /* ToDoWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2CEADF1A261AFED100B2B89B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEADF19261AFED100B2B89B /* ExtensionDelegate.swift */; };
+		2CEADF1C261AFED100B2B89B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEADF1B261AFED100B2B89B /* NotificationController.swift */; };
+		2CEADF1E261AFED100B2B89B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEADF1D261AFED100B2B89B /* ComplicationController.swift */; };
+		2CEADF20261AFED400B2B89B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEADF1F261AFED400B2B89B /* Assets.xcassets */; };
+		2CEADF25261AFED400B2B89B /* ToDoWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2CEADF06261AFEC800B2B89B /* ToDoWatchApp.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2CF0615225E7C1BC00B26712 /* StoreContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF0615125E7C1BC00B26712 /* StoreContainer.swift */; };
+		2CF62B1F25C859D10013DC54 /* ProjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B1E25C859D10013DC54 /* ProjectDetailsViewController.swift */; };
+		2CF62B2225C871770013DC54 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B2125C871770013DC54 /* AddTaskViewController.swift */; };
+		2CF62B2B25C964CD0013DC54 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B2A25C964CD0013DC54 /* Priority.swift */; };
+		2CF62B2E25C9676E0013DC54 /* SelectTaskPriorityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B2D25C9676E0013DC54 /* SelectTaskPriorityViewController.swift */; };
+		2CF62B3125C968AD0013DC54 /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B3025C968AD0013DC54 /* CellViewModelProtocol.swift */; };
+		2CF62B3425C968C10013DC54 /* ToggleButtonCellDisplayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B3325C968C10013DC54 /* ToggleButtonCellDisplayObject.swift */; };
+		2CF62B3725C968E70013DC54 /* SelectOptionCellDisplayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B3625C968E70013DC54 /* SelectOptionCellDisplayObject.swift */; };
+		2CF62B3A25C968FC0013DC54 /* TextFieldCellDisplayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B3925C968FC0013DC54 /* TextFieldCellDisplayObject.swift */; };
+		2CF62B3D25C969100013DC54 /* SelectProjectColorCellDisplayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B3C25C969100013DC54 /* SelectProjectColorCellDisplayObject.swift */; };
+		2CF62B4425C969AF0013DC54 /* TaskPriorityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B4225C969AF0013DC54 /* TaskPriorityCell.swift */; };
+		2CF62B4525C969AF0013DC54 /* TaskPriorityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF62B4325C969AF0013DC54 /* TaskPriorityCell.xib */; };
+		2CF62B4A25C96AAC0013DC54 /* PriorityCellDisplayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B4925C96AAC0013DC54 /* PriorityCellDisplayObject.swift */; };
+		2CF62B4D25C97DFD0013DC54 /* TasksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B4C25C97DFD0013DC54 /* TasksService.swift */; };
+		2CF62B5025C980E60013DC54 /* TaskDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B4F25C980E60013DC54 /* TaskDTO.swift */; };
+		2CF62B5725C98FD90013DC54 /* TaskRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B5625C98FD90013DC54 /* TaskRequestParams.swift */; };
+		2CF62B5A25C9A0A00013DC54 /* TaskCellDisplayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF62B5925C9A0A00013DC54 /* TaskCellDisplayObject.swift */; };
+		2CF906F0261BA47500958F02 /* SystemHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF906EF261BA47500958F02 /* SystemHelper.swift */; };
+		2CFA3C47261F934000E0CF99 /* RowTypeConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA3C46261F933F00E0CF99 /* RowTypeConvertible.swift */; };
+		58C5929E32C6800961B99309 /* Pods_ToDoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6084A143F958E4FBC7CFB2C7 /* Pods_ToDoApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CEADF14261AFED100B2B89B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C00AF3A25B6F32B00F50FBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CEADF11261AFED100B2B89B;
+			remoteInfo = "ToDoWatchApp Extension";
+		};
+		2CEADF23261AFED400B2B89B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C00AF3A25B6F32B00F50FBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CEADF05261AFEC800B2B89B;
+			remoteInfo = ToDoWatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CEADF26261AFED400B2B89B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2CEADF25261AFED400B2B89B /* ToDoWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CEADF29261AFED400B2B89B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2CEADF13261AFED100B2B89B /* ToDoWatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		15F30F57F09B0B7C98A14EE6 /* Pods-ToDoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoApp.debug.xcconfig"; path = "Target Support Files/Pods-ToDoApp/Pods-ToDoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2C00AF4225B6F32B00F50FBD /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C00AF4525B6F32B00F50FBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C00AF4725B6F32B00F50FBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2C00AF4925B6F32C00F50FBD /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		2C00AF4C25B6F32C00F50FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Projectslist.storyboard; sourceTree = "<group>"; };
+		2C00AF4F25B6F32C00F50FBD /* ToDoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoApp.xcdatamodel; sourceTree = "<group>"; };
+		2C00AF5125B6F33100F50FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C00AF5425B6F33100F50FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C00AF5625B6F33100F50FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C019F5A25E533980098DBD5 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		2C019F6025E5458C0098DBD5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		2C0B84B22600F83E00AF8A99 /* ProjectFiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFiltersViewController.swift; sourceTree = "<group>"; };
+		2C0B84B82601190300AF8A99 /* ProjectFiltersInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFiltersInteractorImpl.swift; sourceTree = "<group>"; };
+		2C0B84BB2601191300AF8A99 /* ProjectFiltersPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFiltersPresenterImpl.swift; sourceTree = "<group>"; };
+		2C0E5EE6261DA86D006B84A2 /* SplitViewMasterScreenSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewMasterScreenSections.swift; sourceTree = "<group>"; };
+		2C0E5F00261DD5AA006B84A2 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		2C0E5F14261E1083006B84A2 /* MainSplitCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2C18039925E51A4800DDA782 /* NSmanagedObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSmanagedObject+Extension.swift"; sourceTree = "<group>"; };
+		2C18E44D261F3E6800C15B87 /* ProjectCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCellController.swift; sourceTree = "<group>"; };
+		2C19B1A525FA78A000FC1BBA /* TasksListCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListCoordinatorImpl.swift; sourceTree = "<group>"; };
+		2C19B1AB25FA7B7700FC1BBA /* AddTaskCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskCoordinatorImpl.swift; sourceTree = "<group>"; };
+		2C19B1AE25FA7BEB00FC1BBA /* EditTaskCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskCoordinatorImpl.swift; sourceTree = "<group>"; };
+		2C1B65EE25C2AB270046EA6A /* TableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSection.swift; sourceTree = "<group>"; };
+		2C1B65F125C2AFEC0046EA6A /* ColorCellDisplayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCellDisplayObject.swift; sourceTree = "<group>"; };
+		2C1B65FF25C2BE330046EA6A /* SelectProjectColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProjectColorCell.swift; sourceTree = "<group>"; };
+		2C1B660025C2BE330046EA6A /* SelectProjectColorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectProjectColorCell.xib; sourceTree = "<group>"; };
+		2C1B660425C2CF4B0046EA6A /* SelectProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProjectViewController.swift; sourceTree = "<group>"; };
+		2C1EE25B25FB594E00589C07 /* SettingsCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinatorImpl.swift; sourceTree = "<group>"; };
+		2C1EE27725FE3D1A00589C07 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		2C1EE28225FE8CDD00589C07 /* ToDoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoObject.swift; sourceTree = "<group>"; };
+		2C206C7B261F5E92005D0316 /* MainMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuItem.swift; sourceTree = "<group>"; };
+		2C268E7B25F134F800340CEF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		2C268E9225F231FE00340CEF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2C268E9525F23A7C00340CEF /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		2C268E9C25F249E500340CEF /* ProjectsListPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListPresenterImpl.swift; sourceTree = "<group>"; };
+		2C268EA025F24C6D00340CEF /* ProjectsListInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListInteractorImpl.swift; sourceTree = "<group>"; };
+		2C27874625C0A2AA00FA8814 /* SelectOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionCell.swift; sourceTree = "<group>"; };
+		2C27874725C0A2AA00FA8814 /* SelectOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectOptionCell.xib; sourceTree = "<group>"; };
+		2C27874B25C0AB1000FA8814 /* NetworkUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtilities.swift; sourceTree = "<group>"; };
+		2C2E000025F8CF3600E4357C /* TaskModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2C2E000125F8CF3600E4357C /* TaskModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2C2EFFFB25F8CF2F00E4357C /* ProjectModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProjectModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2C2EFFFC25F8CF2F00E4357C /* ProjectModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProjectModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2C3000C125FA01BC00EBA644 /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		2C3000C425FA278C00EBA644 /* EditProjectCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectCoordinatorImpl.swift; sourceTree = "<group>"; };
+		2C3000C725FA2D0F00EBA644 /* AddProjectCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectCoordinatorImpl.swift; sourceTree = "<group>"; };
+		2C3201C62619F69A005C348D /* EditProjectCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2C3201C92619F781005C348D /* AddProjectCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2C3201D42619F9B0005C348D /* AddEditTaskCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTaskCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2C3201D72619F9E1005C348D /* UpdatableWithTaskInfoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatableWithTaskInfoProtocol.swift; sourceTree = "<group>"; };
+		2C3201DE2619FBE9005C348D /* EditTaskCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2C3201E12619FC08005C348D /* AddTaskCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2C3201E42619FC99005C348D /* TaskListCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2C3201E82619FCEC005C348D /* SettingsCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2C3201F2261A0297005C348D /* ReachabilityError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityError.swift; sourceTree = "<group>"; };
+		2C3201F6261A04CF005C348D /* DTOCastingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOCastingError.swift; sourceTree = "<group>"; };
+		2C3201F9261A053C005C348D /* TokenStorageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorageError.swift; sourceTree = "<group>"; };
+		2C3201FC261A05CC005C348D /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		2C320200261A066E005C348D /* ProjectsServiceDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsServiceDelegateProtocol.swift; sourceTree = "<group>"; };
+		2C320203261A06C6005C348D /* ProjectsOrderingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsOrderingType.swift; sourceTree = "<group>"; };
+		2C32020A261A086D005C348D /* CompletionTypealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionTypealias.swift; sourceTree = "<group>"; };
+		2C320213261A1229005C348D /* SpeechRecognitionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionStatus.swift; sourceTree = "<group>"; };
+		2C36D9D026170FD60041BF5D /* Pulsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
+		2C36D9D4261716050041BF5D /* SpeechRecognitionAvailability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionAvailability.swift; sourceTree = "<group>"; };
+		2C36D9D7261716150041BF5D /* SpeechRecognitionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionError.swift; sourceTree = "<group>"; };
+		2C390B1725E9340800F959A0 /* TasksServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksServiceProtocol.swift; sourceTree = "<group>"; };
+		2C390B2325E960A200F959A0 /* StorageManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManagerError.swift; sourceTree = "<group>"; };
+		2C3941F725D947E5003E8FC5 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		2C4C7F23261F171D00DAD86E /* TaskDetailsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsInterfaceController.swift; sourceTree = "<group>"; };
+		2C4C7F37261F2BA500DAD86E /* WKInterfaceController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKInterfaceController+Extension.swift"; sourceTree = "<group>"; };
+		2C4C7F4F261F2E4100DAD86E /* InterfaceControllerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceControllerList.swift; sourceTree = "<group>"; };
+		2C52058925E19DBD00C28447 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		2C52058D25E19E0C00C28447 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		2C52C55026024A5B00F5817B /* ProjectsOrderStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsOrderStorage.swift; sourceTree = "<group>"; };
+		2C52C5562602528900F5817B /* TasksOrderStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksOrderStorage.swift; sourceTree = "<group>"; };
+		2C5C4C6026038F820000E77D /* TasksListFiltersInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListFiltersInteractorImpl.swift; sourceTree = "<group>"; };
+		2C5C4C6426038F8C0000E77D /* TasksListFiltersPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListFiltersPresenterImpl.swift; sourceTree = "<group>"; };
+		2C5C4C6726038F990000E77D /* TasksListFiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListFiltersViewController.swift; sourceTree = "<group>"; };
+		2C5C4C6B2603CECA0000E77D /* TaskSectionsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSectionsMapper.swift; sourceTree = "<group>"; };
+		2C61563F25CC7D38005F385D /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		2C61564225CC7D5F005F385D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		2C61A79125F42DC800CF518D /* SelectTaskPriorityPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTaskPriorityPresenterImpl.swift; sourceTree = "<group>"; };
+		2C61A79525F42DE000CF518D /* SelectTaskPriorityInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTaskPriorityInteractorImpl.swift; sourceTree = "<group>"; };
+		2C61A7A225F4C74100CF518D /* DatePickerPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerPresenterImpl.swift; sourceTree = "<group>"; };
+		2C61A7AC25F4C75200CF518D /* DatePickerInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerInteractorImpl.swift; sourceTree = "<group>"; };
+		2C61A7B225F5174400CF518D /* SelectProjectColorInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProjectColorInteractorImpl.swift; sourceTree = "<group>"; };
+		2C61A7B525F5175200CF518D /* SelectProjectColorPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProjectColorPresenterImpl.swift; sourceTree = "<group>"; };
+		2C61A7B825F528DF00CF518D /* ProjectDetailsInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsInteractorImpl.swift; sourceTree = "<group>"; };
+		2C61A7BB25F528E900CF518D /* ProjectDetailsPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsPresenterImpl.swift; sourceTree = "<group>"; };
+		2C61A7C025F6B16F00CF518D /* SettingsPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterImpl.swift; sourceTree = "<group>"; };
+		2C61A7C325F6B18500CF518D /* SettingsInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractorImpl.swift; sourceTree = "<group>"; };
+		2C61A7C725F6D28400CF518D /* AddTaskInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskInteractorImpl.swift; sourceTree = "<group>"; };
+		2C61A7CA25F6D31A00CF518D /* AddTaskPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskPresenterImpl.swift; sourceTree = "<group>"; };
+		2C644CA725E5719A005EF9F8 /* DataTransferObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferObject.swift; sourceTree = "<group>"; };
+		2C644CAA25E5737C005EF9F8 /* DTOConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOConfigurable.swift; sourceTree = "<group>"; };
+		2C64A73025E7E8FE00AD7C72 /* TaskFilteringPredicates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFilteringPredicates.swift; sourceTree = "<group>"; };
+		2C64A73925E7EF8600AD7C72 /* TaskSortDescriptors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSortDescriptors.swift; sourceTree = "<group>"; };
+		2C65FFAF25D9ABE700A4C085 /* AuthErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthErrorModel.swift; sourceTree = "<group>"; };
+		2C67026625F12AFB007B80E6 /* AuthPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenterImpl.swift; sourceTree = "<group>"; };
+		2C67026A25F12B0D007B80E6 /* AuthInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractorImpl.swift; sourceTree = "<group>"; };
+		2C6876D725C322C90058ADB7 /* ProjectRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRequestParams.swift; sourceTree = "<group>"; };
+		2C6876DC25C326500058ADB7 /* ColorCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCVCell.swift; sourceTree = "<group>"; };
+		2C6876DD25C326500058ADB7 /* ColorCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCVCell.xib; sourceTree = "<group>"; };
+		2C6E3A0025D2F7CC00652B8D /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		2C6E3A2E25D429A400652B8D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		2C6E3A3225D43B7400652B8D /* TasksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListViewController.swift; sourceTree = "<group>"; };
+		2C6E3A3525D444BA00652B8D /* Taskslist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Taskslist.storyboard; sourceTree = "<group>"; };
+		2C6E3A4925D54F8E00652B8D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2C6E3A4C25D54FA500652B8D /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		2C6E3A5125D5A53F00652B8D /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		2C6FA2AE261CFCB600BEF76B /* SplitMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitMenuViewController.swift; sourceTree = "<group>"; };
+		2C6FA2B3261CFCD200BEF76B /* Splitmenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splitmenu.storyboard; sourceTree = "<group>"; };
+		2C6FA2B9261CFE9C00BEF76B /* SplitViewMenuInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewMenuInteractorImpl.swift; sourceTree = "<group>"; };
+		2C6FA2C4261CFEC500BEF76B /* SplitViewMenuPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewMenuPresenterImpl.swift; sourceTree = "<group>"; };
+		2C70FE312615BC1B003F862E /* SpeechRecognitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionManager.swift; sourceTree = "<group>"; };
+		2C70FE3C2615BEA7003F862E /* SpeechRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecordButton.swift; sourceTree = "<group>"; };
+		2C75CD7125CC25D2007C7FB2 /* ProjectCellDisplayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCellDisplayObject.swift; sourceTree = "<group>"; };
+		2C78467D25E3D59300875168 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		2C7E332425CFC56A00DC111A /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		2C834237261CCAEA003DCDF6 /* MacSplitCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacSplitCoordinatorImpl.swift; sourceTree = "<group>"; };
+		2C8552BA25D034C400163097 /* Projectdetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Projectdetails.storyboard; sourceTree = "<group>"; };
+		2C8552C025D07F9F00163097 /* EditProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectViewController.swift; sourceTree = "<group>"; };
+		2C86E453260A34E200DFB3F1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		2C86E45B260B600E00DFB3F1 /* NoNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNetworkView.swift; sourceTree = "<group>"; };
+		2C9AA41625C025470045CCFE /* ProjectsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListViewController.swift; sourceTree = "<group>"; };
+		2C9AA41C25C0296C0045CCFE /* ProjectsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsService.swift; sourceTree = "<group>"; };
+		2C9AA41F25C02B0F0045CCFE /* ProjectDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDTO.swift; sourceTree = "<group>"; };
+		2C9AA42325C02B700045CCFE /* TodoistColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoistColor.swift; sourceTree = "<group>"; };
+		2C9CBBC525CD490D00FC9F13 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
+		2C9CBBC925CD516000FC9F13 /* DeleteButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButtonCell.swift; sourceTree = "<group>"; };
+		2C9CBBCA25CD516000FC9F13 /* DeleteButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteButtonCell.xib; sourceTree = "<group>"; };
+		2C9CBBD025CD535700FC9F13 /* DeleteButtonDisplayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButtonDisplayObject.swift; sourceTree = "<group>"; };
+		2C9CBBD425CD554200FC9F13 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2C9D855625F7A2C000DF06F4 /* AddEditProjectScreenSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditProjectScreenSections.swift; sourceTree = "<group>"; };
+		2C9D855925F7A2F700DF06F4 /* AddProjectInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectInteractorImpl.swift; sourceTree = "<group>"; };
+		2C9D855C25F7A37E00DF06F4 /* AddProjectPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectPresenterImpl.swift; sourceTree = "<group>"; };
+		2C9D855F25F7A61700DF06F4 /* EditProjectPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectPresenterImpl.swift; sourceTree = "<group>"; };
+		2C9D856225F7A64B00DF06F4 /* EditProjectInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectInteractorImpl.swift; sourceTree = "<group>"; };
+		2C9D856525F7AB2A00DF06F4 /* TasksListPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListPresenterImpl.swift; sourceTree = "<group>"; };
+		2C9D856825F7AB3500DF06F4 /* TasksListInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListInteractorImpl.swift; sourceTree = "<group>"; };
+		2C9FC9FB262313EE0007F6ED /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2C9FCA1626233C890007F6ED /* EmptySectionRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySectionRowController.swift; sourceTree = "<group>"; };
+		2C9FCA2326235EB20007F6ED /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		2C9FCA2C262377AA0007F6ED /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
+		2C9FCA31262389610007F6ED /* TasksServiceDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksServiceDelegateProtocol.swift; sourceTree = "<group>"; };
+		2CA09BE825EE69440001E690 /* TasksLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksLocalService.swift; sourceTree = "<group>"; };
+		2CA09BEB25EE6B9E0001E690 /* TasksRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksRemoteService.swift; sourceTree = "<group>"; };
+		2CA180C925ED039A0020BE72 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2CA180CC25ED03A40020BE72 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		2CA180CF25ED03A40020BE72 /* EndPointTypeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointTypeProtocol.swift; sourceTree = "<group>"; };
+		2CA180E125ED6C120020BE72 /* ProjectsLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsLocalService.swift; sourceTree = "<group>"; };
+		2CA180E425ED6C2B0020BE72 /* ProjectsRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsRemoteService.swift; sourceTree = "<group>"; };
+		2CA2B8C6262062C600C8862C /* WatchDataTypeSyncKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDataTypeSyncKey.swift; sourceTree = "<group>"; };
+		2CA2B8CF262064A000C8862C /* WatchConnectivityError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityError.swift; sourceTree = "<group>"; };
+		2CA39B9E2619ED0B00937DA2 /* AppCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2CA39BA12619ED5700937DA2 /* AuthCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2CA39BA62619EE8000937DA2 /* AuthCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorType.swift; sourceTree = "<group>"; };
+		2CA39BA92619EEF100937DA2 /* TabBarCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2CA39BB32619F07900937DA2 /* ProjectsListCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2CA39BB72619F29B00937DA2 /* AddEditProjectCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditProjectCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2CA39BBA2619F46400937DA2 /* UpdatableWithProjectInfoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatableWithProjectInfoProtocol.swift; sourceTree = "<group>"; };
+		2CA63D3225E41FC000E4345A /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		2CADE07125B85BED00C7DD9B /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		2CADE07425B85C0800C7DD9B /* TokenStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorageManager.swift; sourceTree = "<group>"; };
+		2CADE07725B85C2B00C7DD9B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2CB6FB7025CEC35500412692 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		2CB6FB7825CEC4E400412692 /* UIView+NibLoadable+ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoadable+ReusableView.swift"; sourceTree = "<group>"; };
+		2CB6FB8C25CEC6E100412692 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		2CB6FB9425CEE03700412692 /* AuthTokenRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenRequestParams.swift; sourceTree = "<group>"; };
+		2CB7A80E25E6527A007111E9 /* ProjectsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsServiceProtocol.swift; sourceTree = "<group>"; };
+		2CB7A81225E6529F007111E9 /* ProjectFilteringPredicates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFilteringPredicates.swift; sourceTree = "<group>"; };
+		2CB7A81525E652B8007111E9 /* ProjectSortDescriptors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSortDescriptors.swift; sourceTree = "<group>"; };
+		2CB7A81925E65309007111E9 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
+		2CBC27012609F06200C038AF /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		2CC9CE7925BDC8F6001EB69E /* NibLoadableProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NibLoadableProtocol+Extension.swift"; sourceTree = "<group>"; };
+		2CC9CE8625BDF605001EB69E /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		2CC9CE8725BDF605001EB69E /* ProjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCell.xib; sourceTree = "<group>"; };
+		2CC9CE8E25BEC08A001EB69E /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		2CC9CE8F25BEC08A001EB69E /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		2CC9CEC725BF3978001EB69E /* AddProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewController.swift; sourceTree = "<group>"; };
+		2CC9CECC25BF406D001EB69E /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		2CC9CECD25BF406D001EB69E /* TextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
+		2CC9CEDA25BF46EF001EB69E /* ToggleButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButtonCell.swift; sourceTree = "<group>"; };
+		2CC9CEDB25BF46EF001EB69E /* ToggleButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToggleButtonCell.xib; sourceTree = "<group>"; };
+		2CCB4E7526026BAF0091C3DB /* ProjectDetailsFiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsFiltersViewController.swift; sourceTree = "<group>"; };
+		2CCB4E7926026C560091C3DB /* ProjectDetailsFiltersInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsFiltersInteractorImpl.swift; sourceTree = "<group>"; };
+		2CCB4E7D26026C600091C3DB /* ProjectDetailsFiltersPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsFiltersPresenterImpl.swift; sourceTree = "<group>"; };
+		2CD17BD125F9313C00BB8BFF /* AuthCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorImpl.swift; sourceTree = "<group>"; };
+		2CD17BD425F933C100BB8BFF /* TabBarCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorImpl.swift; sourceTree = "<group>"; };
+		2CD2E23E262067BC00F07319 /* TasksListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListSection.swift; sourceTree = "<group>"; };
+		2CD2E2532621956A00F07319 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		2CD2E26326219E7000F07319 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		2CD2E26826220F7200F07319 /* BaseInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterfaceController.swift; sourceTree = "<group>"; };
+		2CD2F0B025DEB998009D2D12 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2CD43A4F261F955700D0AB59 /* WKInterfaceTable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKInterfaceTable+Extension.swift"; sourceTree = "<group>"; };
+		2CD43A5D261F962E00D0AB59 /* RowControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowControllerType.swift; sourceTree = "<group>"; };
+		2CD43A7B261F9EF400D0AB59 /* TaskCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellController.swift; sourceTree = "<group>"; };
+		2CD43A80261F9F0F00D0AB59 /* MainMenuCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCellController.swift; sourceTree = "<group>"; };
+		2CD43A85261F9F2700D0AB59 /* TableSectionCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSectionCellController.swift; sourceTree = "<group>"; };
+		2CD90B6C25F923D0000C8DA2 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2CD90B6F25F9241E000C8DA2 /* AppCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorImpl.swift; sourceTree = "<group>"; };
+		2CD90B7225F92571000C8DA2 /* ProjectsListCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListCoordinatorImpl.swift; sourceTree = "<group>"; };
+		2CDAC98D261F00C200B5AC34 /* MainInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceController.swift; sourceTree = "<group>"; };
+		2CDAC9A3261F056C00B5AC34 /* ProjectsListInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListInterfaceController.swift; sourceTree = "<group>"; };
+		2CDAC9A8261F05CE00B5AC34 /* ProjectDetailsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsInterfaceController.swift; sourceTree = "<group>"; };
+		2CDAC9AD261F063500B5AC34 /* TasksListInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListInterfaceController.swift; sourceTree = "<group>"; };
+		2CDAC9B2261F066400B5AC34 /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
+		2CDC204825F798F000718859 /* AddEditTaskScreenSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTaskScreenSections.swift; sourceTree = "<group>"; };
+		2CDC204B25F79A0A00718859 /* EditTaskPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskPresenterImpl.swift; sourceTree = "<group>"; };
+		2CDC204E25F79A4F00718859 /* EditTaskInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskInteractorImpl.swift; sourceTree = "<group>"; };
+		2CDEB12D25CFFDDD00BB3C5A /* AuthCodeRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCodeRequestParams.swift; sourceTree = "<group>"; };
+		2CDFF32E25D2DD0900CCBADD /* TaskDueDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDueDate.swift; sourceTree = "<group>"; };
+		2CE153FC25BF4B8E007A3394 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		2CE153FF25C01525007A3394 /* SelectProjectColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProjectColorViewController.swift; sourceTree = "<group>"; };
+		2CE175B825D68C3100D38F51 /* Bool+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Extension.swift"; sourceTree = "<group>"; };
+		2CE417F525F37AC0002A9915 /* SelectProjectInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProjectInteractorImpl.swift; sourceTree = "<group>"; };
+		2CE417F825F37ACB002A9915 /* SelectProjectPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProjectPresenterImpl.swift; sourceTree = "<group>"; };
+		2CE83D9825BB27620039F611 /* ReusableViewProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReusableViewProtocol+Extension.swift"; sourceTree = "<group>"; };
+		2CE83D9B25BB29610039F611 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		2CE924A225C6FDB500CAD487 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CE924A525C6FE3100CAD487 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CE924B525C7024F00CAD487 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = /Users/yeroshenko_m/Documents/DataArt/R.generated.swift; sourceTree = "<absolute>"; };
+		2CEADF06261AFEC800B2B89B /* ToDoWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CEADF09261AFEC800B2B89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2CEADF0B261AFED100B2B89B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CEADF0D261AFED100B2B89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CEADF12261AFED100B2B89B /* ToDoWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ToDoWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CEADF19261AFED100B2B89B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2CEADF1B261AFED100B2B89B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2CEADF1D261AFED100B2B89B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2CEADF1F261AFED400B2B89B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CEADF21261AFED400B2B89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CEADF22261AFED400B2B89B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2CF0615125E7C1BC00B26712 /* StoreContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreContainer.swift; sourceTree = "<group>"; };
+		2CF62B1E25C859D10013DC54 /* ProjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsViewController.swift; sourceTree = "<group>"; };
+		2CF62B2125C871770013DC54 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		2CF62B2A25C964CD0013DC54 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		2CF62B2D25C9676E0013DC54 /* SelectTaskPriorityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTaskPriorityViewController.swift; sourceTree = "<group>"; };
+		2CF62B3025C968AD0013DC54 /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
+		2CF62B3325C968C10013DC54 /* ToggleButtonCellDisplayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButtonCellDisplayObject.swift; sourceTree = "<group>"; };
+		2CF62B3625C968E70013DC54 /* SelectOptionCellDisplayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionCellDisplayObject.swift; sourceTree = "<group>"; };
+		2CF62B3925C968FC0013DC54 /* TextFieldCellDisplayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCellDisplayObject.swift; sourceTree = "<group>"; };
+		2CF62B3C25C969100013DC54 /* SelectProjectColorCellDisplayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProjectColorCellDisplayObject.swift; sourceTree = "<group>"; };
+		2CF62B4225C969AF0013DC54 /* TaskPriorityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPriorityCell.swift; sourceTree = "<group>"; };
+		2CF62B4325C969AF0013DC54 /* TaskPriorityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskPriorityCell.xib; sourceTree = "<group>"; };
+		2CF62B4925C96AAC0013DC54 /* PriorityCellDisplayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityCellDisplayObject.swift; sourceTree = "<group>"; };
+		2CF62B4C25C97DFD0013DC54 /* TasksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksService.swift; sourceTree = "<group>"; };
+		2CF62B4F25C980E60013DC54 /* TaskDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDTO.swift; sourceTree = "<group>"; };
+		2CF62B5625C98FD90013DC54 /* TaskRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRequestParams.swift; sourceTree = "<group>"; };
+		2CF62B5925C9A0A00013DC54 /* TaskCellDisplayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellDisplayObject.swift; sourceTree = "<group>"; };
+		2CF906EF261BA47500958F02 /* SystemHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemHelper.swift; sourceTree = "<group>"; };
+		2CFA3C46261F933F00E0CF99 /* RowTypeConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowTypeConvertible.swift; sourceTree = "<group>"; };
+		6084A143F958E4FBC7CFB2C7 /* Pods_ToDoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D972BCEFA3E52233C7CE2CC7 /* Pods-ToDoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoApp.release.xcconfig"; path = "Target Support Files/Pods-ToDoApp/Pods-ToDoApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C00AF3F25B6F32B00F50FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58C5929E32C6800961B99309 /* Pods_ToDoApp.framework in Frameworks */,
+				2C86E454260A34E200DFB3F1 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CEADF0F261AFED100B2B89B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6281B7BE519ABFF76BA9E7E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C00AF3925B6F32B00F50FBD = {
+			isa = PBXGroup;
+			children = (
+				2C00AF4425B6F32B00F50FBD /* ToDoApp */,
+				2CEADF07261AFEC800B2B89B /* ToDoWatchApp */,
+				2CEADF16261AFED100B2B89B /* ToDoWatchApp Extension */,
+				2C00AF4325B6F32B00F50FBD /* Products */,
+				A8C0C804F5837FA46DB7EFEE /* Pods */,
+				85996FC63CC3964C56D638D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C00AF4325B6F32B00F50FBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C00AF4225B6F32B00F50FBD /* ToDoApp.app */,
+				2CEADF06261AFEC800B2B89B /* ToDoWatchApp.app */,
+				2CEADF12261AFED100B2B89B /* ToDoWatchApp Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C00AF4425B6F32B00F50FBD /* ToDoApp */ = {
+			isa = PBXGroup;
+			children = (
+				2CE83D9F25BC71510039F611 /* App */,
+				2C33F08B25DD815E00D73F62 /* Common */,
+				2C9AA42A25C02B8C0045CCFE /* Components */,
+				2C9AA42725C02B7C0045CCFE /* Models */,
+				2C5D061325C6DA4B00C4F0EF /* Resourses */,
+				2C7826FB25C1D6F700C15DC2 /* Scenes */,
+				2C00AF5625B6F33100F50FBD /* Info.plist */,
+				2C00AF4E25B6F32C00F50FBD /* ToDoApp.xcdatamodeld */,
+			);
+			path = ToDoApp;
+			sourceTree = "<group>";
+		};
+		2C0B84B6260118DB00AF8A99 /* ProjectFilters */ = {
+			isa = PBXGroup;
+			children = (
+				2C0B84B22600F83E00AF8A99 /* ProjectFiltersViewController.swift */,
+				2C0B84B82601190300AF8A99 /* ProjectFiltersInteractorImpl.swift */,
+				2C0B84BB2601191300AF8A99 /* ProjectFiltersPresenterImpl.swift */,
+			);
+			path = ProjectFilters;
+			sourceTree = "<group>";
+		};
+		2C0E5F08261DE077006B84A2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2C9D855625F7A2C000DF06F4 /* AddEditProjectScreenSections.swift */,
+				2CDC204825F798F000718859 /* AddEditTaskScreenSections.swift */,
+				2C0E5EE6261DA86D006B84A2 /* SplitViewMasterScreenSections.swift */,
+				2C32020A261A086D005C348D /* CompletionTypealias.swift */,
+				2CF906EF261BA47500958F02 /* SystemHelper.swift */,
+				2CA2B8C6262062C600C8862C /* WatchDataTypeSyncKey.swift */,
+				2CA2B8CF262064A000C8862C /* WatchConnectivityError.swift */,
+				2CD2E23E262067BC00F07319 /* TasksListSection.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2C12F41F25DE5CEC00DF7B87 /* AddProject */ = {
+			isa = PBXGroup;
+			children = (
+				2CC9CEC725BF3978001EB69E /* AddProjectViewController.swift */,
+				2C9D855925F7A2F700DF06F4 /* AddProjectInteractorImpl.swift */,
+				2C9D855C25F7A37E00DF06F4 /* AddProjectPresenterImpl.swift */,
+			);
+			path = AddProject;
+			sourceTree = "<group>";
+		};
+		2C1B65FB25C2BD290046EA6A /* SelectProjectColorCell */ = {
+			isa = PBXGroup;
+			children = (
+				2CF62B3C25C969100013DC54 /* SelectProjectColorCellDisplayObject.swift */,
+				2C1B65FF25C2BE330046EA6A /* SelectProjectColorCell.swift */,
+				2C1B660025C2BE330046EA6A /* SelectProjectColorCell.xib */,
+			);
+			path = SelectProjectColorCell;
+			sourceTree = "<group>";
+		};
+		2C1EE25725FB578500589C07 /* ProjectsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				2CA39BAD2619EF9100937DA2 /* ProjectsList */,
+				2C3201CC2619F86F005C348D /* AddEditProject */,
+			);
+			path = ProjectsFlow;
+			sourceTree = "<group>";
+		};
+		2C1EE25925FB579C00589C07 /* TasksFlow */ = {
+			isa = PBXGroup;
+			children = (
+				2C3201CD2619F8AD005C348D /* TasksList */,
+				2C3201CF2619F8B7005C348D /* AddEditTask */,
+			);
+			path = TasksFlow;
+			sourceTree = "<group>";
+		};
+		2C1EE25F25FB70F200589C07 /* SettingsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				2C1EE25B25FB594E00589C07 /* SettingsCoordinatorImpl.swift */,
+				2C3201E82619FCEC005C348D /* SettingsCoordinatorProtocol.swift */,
+			);
+			path = SettingsFlow;
+			sourceTree = "<group>";
+		};
+		2C1EE26325FBA5DA00589C07 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2CD90B6F25F9241E000C8DA2 /* AppCoordinatorImpl.swift */,
+				2CA39B9E2619ED0B00937DA2 /* AppCoordinatorProtocol.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2C1EE26C25FBA5DF00589C07 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2CD17BD125F9313C00BB8BFF /* AuthCoordinatorImpl.swift */,
+				2CA39BA12619ED5700937DA2 /* AuthCoordinatorProtocol.swift */,
+				2CA39BA62619EE8000937DA2 /* AuthCoordinatorType.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		2C1EE26D25FBA5E500589C07 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2CD17BD425F933C100BB8BFF /* TabBarCoordinatorImpl.swift */,
+				2CA39BA92619EEF100937DA2 /* TabBarCoordinatorProtocol.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2C206C80261F5E97005D0316 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C206C7B261F5E92005D0316 /* MainMenuItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C268EB425F2E47200340CEF /* SelectTaskPriority */ = {
+			isa = PBXGroup;
+			children = (
+				2CF62B2D25C9676E0013DC54 /* SelectTaskPriorityViewController.swift */,
+				2C61A79525F42DE000CF518D /* SelectTaskPriorityInteractorImpl.swift */,
+				2C61A79125F42DC800CF518D /* SelectTaskPriorityPresenterImpl.swift */,
+			);
+			path = SelectTaskPriority;
+			sourceTree = "<group>";
+		};
+		2C268EB625F2E47E00340CEF /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E3A0025D2F7CC00652B8D /* DatePickerViewController.swift */,
+				2C61A7AC25F4C75200CF518D /* DatePickerInteractorImpl.swift */,
+				2C61A7A225F4C74100CF518D /* DatePickerPresenterImpl.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		2C268EB825F2E48C00340CEF /* SelectProject */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B660425C2CF4B0046EA6A /* SelectProjectViewController.swift */,
+				2CE417F525F37AC0002A9915 /* SelectProjectInteractorImpl.swift */,
+				2CE417F825F37ACB002A9915 /* SelectProjectPresenterImpl.swift */,
+			);
+			path = SelectProject;
+			sourceTree = "<group>";
+		};
+		2C268EB925F2E49500340CEF /* EditTask */ = {
+			isa = PBXGroup;
+			children = (
+				2C9CBBC525CD490D00FC9F13 /* EditTaskViewController.swift */,
+				2CDC204E25F79A4F00718859 /* EditTaskInteractorImpl.swift */,
+				2CDC204B25F79A0A00718859 /* EditTaskPresenterImpl.swift */,
+			);
+			path = EditTask;
+			sourceTree = "<group>";
+		};
+		2C3201CC2619F86F005C348D /* AddEditProject */ = {
+			isa = PBXGroup;
+			children = (
+				2CA39BB72619F29B00937DA2 /* AddEditProjectCoordinatorProtocol.swift */,
+				2CA39BB02619EFA000937DA2 /* AddProject */,
+				2CA39BAE2619EF9A00937DA2 /* EditProject */,
+			);
+			path = AddEditProject;
+			sourceTree = "<group>";
+		};
+		2C3201CD2619F8AD005C348D /* TasksList */ = {
+			isa = PBXGroup;
+			children = (
+				2C19B1A525FA78A000FC1BBA /* TasksListCoordinatorImpl.swift */,
+				2C3201D72619F9E1005C348D /* UpdatableWithTaskInfoProtocol.swift */,
+				2C3201E42619FC99005C348D /* TaskListCoordinatorProtocol.swift */,
+			);
+			path = TasksList;
+			sourceTree = "<group>";
+		};
+		2C3201CF2619F8B7005C348D /* AddEditTask */ = {
+			isa = PBXGroup;
+			children = (
+				2C3201D42619F9B0005C348D /* AddEditTaskCoordinatorProtocol.swift */,
+				2C3201D12619F8C1005C348D /* AddTask */,
+				2C3201D22619F8C6005C348D /* EditTask */,
+			);
+			path = AddEditTask;
+			sourceTree = "<group>";
+		};
+		2C3201D12619F8C1005C348D /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				2C19B1AB25FA7B7700FC1BBA /* AddTaskCoordinatorImpl.swift */,
+				2C3201E12619FC08005C348D /* AddTaskCoordinatorProtocol.swift */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		2C3201D22619F8C6005C348D /* EditTask */ = {
+			isa = PBXGroup;
+			children = (
+				2C19B1AE25FA7BEB00FC1BBA /* EditTaskCoordinatorImpl.swift */,
+				2C3201DE2619FBE9005C348D /* EditTaskCoordinatorProtocol.swift */,
+			);
+			path = EditTask;
+			sourceTree = "<group>";
+		};
+		2C3201EC261A01C1005C348D /* ReachabilityManager */ = {
+			isa = PBXGroup;
+			children = (
+				2CBC27012609F06200C038AF /* ReachabilityManager.swift */,
+				2C3201F2261A0297005C348D /* ReachabilityError.swift */,
+			);
+			path = ReachabilityManager;
+			sourceTree = "<group>";
+		};
+		2C3201F0261A01EB005C348D /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				2C5C4C6B2603CECA0000E77D /* TaskSectionsMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		2C32020E261A11CF005C348D /* AddEditTask */ = {
+			isa = PBXGroup;
+			children = (
+				2CA9A7A725DE6EC70055AD83 /* AddTask */,
+				2C268EB925F2E49500340CEF /* EditTask */,
+			);
+			path = AddEditTask;
+			sourceTree = "<group>";
+		};
+		2C320211261A11EF005C348D /* AddEditProject */ = {
+			isa = PBXGroup;
+			children = (
+				2C12F41F25DE5CEC00DF7B87 /* AddProject */,
+				2CA30FA525F3763F00E2CA41 /* EditProject */,
+			);
+			path = AddEditProject;
+			sourceTree = "<group>";
+		};
+		2C33F08B25DD815E00D73F62 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2C9A653725FA766D00AE1251 /* Coordinators */,
+				2C7826FC25C1D73500C15DC2 /* Extensions */,
+				2C0E5F08261DE077006B84A2 /* Helpers */,
+				2CE83DAA25BC83940039F611 /* Protocols */,
+				2C33F08E25DD818100D73F62 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2C33F08E25DD818100D73F62 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2C38602825F1250E0092856D /* Cells */,
+				2C67026125F12943007B80E6 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2C33F09025DD81BE00D73F62 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2C00AF5125B6F33100F50FBD /* Assets.xcassets */,
+				2C6E3A5125D5A53F00652B8D /* Icons.xcassets */,
+				2CD2F0B025DEB998009D2D12 /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2C33F09625DD829B00D73F62 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E3A2E25D429A400652B8D /* MainTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2C33F09825DD831000D73F62 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E3A4925D54F8E00652B8D /* SettingsViewController.swift */,
+				2C61A7C325F6B18500CF518D /* SettingsInteractorImpl.swift */,
+				2C61A7C025F6B16F00CF518D /* SettingsPresenterImpl.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2C38602825F1250E0092856D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2C6876DB25C3261B0058ADB7 /* ColorCVCell */,
+				2CC9CE8B25BDF60D001EB69E /* ProjectCell */,
+				2CC9CE8D25BEBFB0001EB69E /* TaskCell */,
+				2CF62B5D25CAA0C40013DC54 /* TaskPriorityCell */,
+				2C9CBBCE25CD533900FC9F13 /* DeleteButtonCell */,
+				2CC9CECB25BF401E001EB69E /* TextFieldCell */,
+				2C86AFCB25C183E200FCDE68 /* SelectOptionCell */,
+				2CC9CED225BF44F2001EB69E /* ToggleButtonCell */,
+				2C1B65FB25C2BD290046EA6A /* SelectProjectColorCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2C4C7F28261F238D00DAD86E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2CEADF19261AFED100B2B89B /* ExtensionDelegate.swift */,
+				2CEADF1B261AFED100B2B89B /* NotificationController.swift */,
+				2CEADF1D261AFED100B2B89B /* ComplicationController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2C4C7F3C261F2BAB00DAD86E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C7F43261F2BB400DAD86E /* Extensions */,
+				2C4C7F54261F2E4600DAD86E /* Helpers */,
+				2CFA3C4B261F934700E0CF99 /* Protocols */,
+				2CD2E26D2622176D00F07319 /* UI */,
+				2CD43A77261F9B6300D0AB59 /* RowControllers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2C4C7F43261F2BB400DAD86E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C7F37261F2BA500DAD86E /* WKInterfaceController+Extension.swift */,
+				2CD43A4F261F955700D0AB59 /* WKInterfaceTable+Extension.swift */,
+				2C9FCA2C262377AA0007F6ED /* Notification+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C4C7F54261F2E4600DAD86E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C7F4F261F2E4100DAD86E /* InterfaceControllerList.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2C4C7F58261F2EB700DAD86E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2CDAC98D261F00C200B5AC34 /* MainInterfaceController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2C4C7F5C261F2EBC00DAD86E /* ProjectsList */ = {
+			isa = PBXGroup;
+			children = (
+				2CDAC9A3261F056C00B5AC34 /* ProjectsListInterfaceController.swift */,
+			);
+			path = ProjectsList;
+			sourceTree = "<group>";
+		};
+		2C4C7F66261F2EC800DAD86E /* ProjectDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2CDAC9A8261F05CE00B5AC34 /* ProjectDetailsInterfaceController.swift */,
+			);
+			path = ProjectDetails;
+			sourceTree = "<group>";
+		};
+		2C4C7F6A261F2ECE00DAD86E /* TasksList */ = {
+			isa = PBXGroup;
+			children = (
+				2CDAC9AD261F063500B5AC34 /* TasksListInterfaceController.swift */,
+			);
+			path = TasksList;
+			sourceTree = "<group>";
+		};
+		2C4C7F71261F2ED600DAD86E /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				2CDAC9B2261F066400B5AC34 /* ScheduleInterfaceController.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		2C4C7F75261F2EDB00DAD86E /* TaskDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C7F23261F171D00DAD86E /* TaskDetailsInterfaceController.swift */,
+			);
+			path = TaskDetails;
+			sourceTree = "<group>";
+		};
+		2C52058825E19D9D00C28447 /* StorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				2CA63D4725E4F59A00E4345A /* NSManagedObjects */,
+				2C52058925E19DBD00C28447 /* CoreDataStack.swift */,
+				2C52058D25E19E0C00C28447 /* StorageManager.swift */,
+				2CF0615125E7C1BC00B26712 /* StoreContainer.swift */,
+				2C390B2325E960A200F959A0 /* StorageManagerError.swift */,
+			);
+			path = StorageManager;
+			sourceTree = "<group>";
+		};
+		2C52059225E3BE3900C28447 /* DataTransferObjects */ = {
+			isa = PBXGroup;
+			children = (
+				2C644CA725E5719A005EF9F8 /* DataTransferObject.swift */,
+				2C644CAA25E5737C005EF9F8 /* DTOConfigurable.swift */,
+				2C9AA41F25C02B0F0045CCFE /* ProjectDTO.swift */,
+				2CF62B4F25C980E60013DC54 /* TaskDTO.swift */,
+			);
+			path = DataTransferObjects;
+			sourceTree = "<group>";
+		};
+		2C5C4C5F26038F640000E77D /* TasksListFilters */ = {
+			isa = PBXGroup;
+			children = (
+				2C5C4C6726038F990000E77D /* TasksListFiltersViewController.swift */,
+				2C5C4C6026038F820000E77D /* TasksListFiltersInteractorImpl.swift */,
+				2C5C4C6426038F8C0000E77D /* TasksListFiltersPresenterImpl.swift */,
+			);
+			path = TasksListFilters;
+			sourceTree = "<group>";
+		};
+		2C5D061325C6DA4B00C4F0EF /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				2C33F09025DD81BE00D73F62 /* Assets */,
+				2CE83DA025BC716D0039F611 /* Storyboards */,
+				2CE924A325C6FDB500CAD487 /* Localizable.strings */,
+				2CE924B525C7024F00CAD487 /* R.generated.swift */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		2C61564925CC7DD1005F385D /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+				2CB7A81925E65309007111E9 /* AuthServiceProtocol.swift */,
+				2CADE07725B85C2B00C7DD9B /* AuthService.swift */,
+				2C65FFAF25D9ABE700A4C085 /* AuthErrorModel.swift */,
+				2C3201FC261A05CC005C348D /* AuthError.swift */,
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
+		2C61564C25CC7FE2005F385D /* RequestParams */ = {
+			isa = PBXGroup;
+			children = (
+				2CB6FB9425CEE03700412692 /* AuthTokenRequestParams.swift */,
+				2CDEB12D25CFFDDD00BB3C5A /* AuthCodeRequestParams.swift */,
+				2C6876D725C322C90058ADB7 /* ProjectRequestParams.swift */,
+				2CF62B5625C98FD90013DC54 /* TaskRequestParams.swift */,
+			);
+			path = RequestParams;
+			sourceTree = "<group>";
+		};
+		2C644CB025E58FB9005EF9F8 /* ProjectsService */ = {
+			isa = PBXGroup;
+			children = (
+				2CB7A80E25E6527A007111E9 /* ProjectsServiceProtocol.swift */,
+				2C9AA41C25C0296C0045CCFE /* ProjectsService.swift */,
+				2C320200261A066E005C348D /* ProjectsServiceDelegateProtocol.swift */,
+				2CA180E125ED6C120020BE72 /* ProjectsLocalService.swift */,
+				2CA180E425ED6C2B0020BE72 /* ProjectsRemoteService.swift */,
+				2CB7A81225E6529F007111E9 /* ProjectFilteringPredicates.swift */,
+				2CB7A81525E652B8007111E9 /* ProjectSortDescriptors.swift */,
+				2C52C55026024A5B00F5817B /* ProjectsOrderStorage.swift */,
+				2C320203261A06C6005C348D /* ProjectsOrderingType.swift */,
+			);
+			path = ProjectsService;
+			sourceTree = "<group>";
+		};
+		2C67026125F12943007B80E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C3941F725D947E5003E8FC5 /* ActivityView.swift */,
+				2CE83D9B25BB29610039F611 /* AddButton.swift */,
+				2C268E9225F231FE00340CEF /* BaseViewController.swift */,
+				2C3000C125FA01BC00EBA644 /* NavController.swift */,
+				2C86E45B260B600E00DFB3F1 /* NoNetworkView.swift */,
+				2C1EE27725FE3D1A00589C07 /* SearchController.swift */,
+				2C268E9525F23A7C00340CEF /* TableView.swift */,
+				2C70FE3C2615BEA7003F862E /* SpeechRecordButton.swift */,
+				2C36D9D026170FD60041BF5D /* Pulsing.swift */,
+				2C0E5F00261DD5AA006B84A2 /* SplitViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C67026425F12A1E007B80E6 /* TokenStorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				2CADE07425B85C0800C7DD9B /* TokenStorageManager.swift */,
+				2C3201F9261A053C005C348D /* TokenStorageError.swift */,
+			);
+			path = TokenStorageManager;
+			sourceTree = "<group>";
+		};
+		2C6876D625C3228E0058ADB7 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				2C52059225E3BE3900C28447 /* DataTransferObjects */,
+				2C61564C25CC7FE2005F385D /* RequestParams */,
+				2CA180CF25ED03A40020BE72 /* EndPointTypeProtocol.swift */,
+				2CA180CC25ED03A40020BE72 /* EndPointType.swift */,
+				2CA180C925ED039A0020BE72 /* NetworkManager.swift */,
+				2C27874B25C0AB1000FA8814 /* NetworkUtilities.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		2C6876DB25C3261B0058ADB7 /* ColorCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				2C1B65F125C2AFEC0046EA6A /* ColorCellDisplayObject.swift */,
+				2C6876DC25C326500058ADB7 /* ColorCVCell.swift */,
+				2C6876DD25C326500058ADB7 /* ColorCVCell.xib */,
+			);
+			path = ColorCVCell;
+			sourceTree = "<group>";
+		};
+		2C6FA2B8261CFE8300BEF76B /* SplitViewMenu */ = {
+			isa = PBXGroup;
+			children = (
+				2C6FA2AE261CFCB600BEF76B /* SplitMenuViewController.swift */,
+				2C6FA2B9261CFE9C00BEF76B /* SplitViewMenuInteractorImpl.swift */,
+				2C6FA2C4261CFEC500BEF76B /* SplitViewMenuPresenterImpl.swift */,
+			);
+			path = SplitViewMenu;
+			sourceTree = "<group>";
+		};
+		2C70FE302615BC07003F862E /* SpeechRecognitionManager */ = {
+			isa = PBXGroup;
+			children = (
+				2C70FE312615BC1B003F862E /* SpeechRecognitionManager.swift */,
+				2C36D9D4261716050041BF5D /* SpeechRecognitionAvailability.swift */,
+				2C36D9D7261716150041BF5D /* SpeechRecognitionError.swift */,
+				2C320213261A1229005C348D /* SpeechRecognitionStatus.swift */,
+			);
+			path = SpeechRecognitionManager;
+			sourceTree = "<group>";
+		};
+		2C70FE422615F202003F862E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2C00AF4925B6F32C00F50FBD /* AuthViewController.swift */,
+				2C67026A25F12B0D007B80E6 /* AuthInteractorImpl.swift */,
+				2C67026625F12AFB007B80E6 /* AuthPresenterImpl.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		2C7826FB25C1D6F700C15DC2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2C70FE422615F202003F862E /* Auth */,
+				2C6FA2B8261CFE8300BEF76B /* SplitViewMenu */,
+				2C33F09625DD829B00D73F62 /* TabBar */,
+				2CA9A7A925DE6EFC0055AD83 /* ProjectsList */,
+				2C0B84B6260118DB00AF8A99 /* ProjectFilters */,
+				2C320211261A11EF005C348D /* AddEditProject */,
+				2CA30FA725F3764700E2CA41 /* SelectProjectColor */,
+				2CA9A7AB25DE6F050055AD83 /* ProjectDetails */,
+				2CCB4E7426026B790091C3DB /* ProjectDetailsFilters */,
+				2C32020E261A11CF005C348D /* AddEditTask */,
+				2C268EB825F2E48C00340CEF /* SelectProject */,
+				2C268EB425F2E47200340CEF /* SelectTaskPriority */,
+				2C268EB625F2E47E00340CEF /* DatePicker */,
+				2CA9A7AD25DE6F180055AD83 /* TasksList */,
+				2C5C4C5F26038F640000E77D /* TasksListFilters */,
+				2C33F09825DD831000D73F62 /* Settings */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2C7826FC25C1D73500C15DC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2CA63D3225E41FC000E4345A /* Array+Extensions.swift */,
+				2CE175B825D68C3100D38F51 /* Bool+Extension.swift */,
+				2CD2E2532621956A00F07319 /* Date+Extension.swift */,
+				2C78467D25E3D59300875168 /* DateFormatter+Extension.swift */,
+				2CB6FB7025CEC35500412692 /* NSObject+Extension.swift */,
+				2C18039925E51A4800DDA782 /* NSmanagedObject+Extension.swift */,
+				2CE153FC25BF4B8E007A3394 /* UITableView+Extension.swift */,
+				2C61563F25CC7D38005F385D /* UICollectionView+Extension.swift */,
+				2C61564225CC7D5F005F385D /* UIColor+Extension.swift */,
+				2C9CBBD425CD554200FC9F13 /* UIViewController+Extension.swift */,
+				2CB6FB7825CEC4E400412692 /* UIView+NibLoadable+ReusableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C83423C261CCAEE003DCDF6 /* SplitView(iPad, mac) */ = {
+			isa = PBXGroup;
+			children = (
+				2C834237261CCAEA003DCDF6 /* MacSplitCoordinatorImpl.swift */,
+				2C0E5F14261E1083006B84A2 /* MainSplitCoordinatorProtocol.swift */,
+			);
+			path = "SplitView(iPad, mac)";
+			sourceTree = "<group>";
+		};
+		2C86AFCB25C183E200FCDE68 /* SelectOptionCell */ = {
+			isa = PBXGroup;
+			children = (
+				2CF62B3625C968E70013DC54 /* SelectOptionCellDisplayObject.swift */,
+				2C27874625C0A2AA00FA8814 /* SelectOptionCell.swift */,
+				2C27874725C0A2AA00FA8814 /* SelectOptionCell.xib */,
+			);
+			path = SelectOptionCell;
+			sourceTree = "<group>";
+		};
+		2C9A653725FA766D00AE1251 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				2CD90B6C25F923D0000C8DA2 /* CoordinatorProtocol.swift */,
+				2C1EE26325FBA5DA00589C07 /* App */,
+				2C1EE26C25FBA5DF00589C07 /* Auth */,
+				2C1EE26D25FBA5E500589C07 /* TabBar */,
+				2C83423C261CCAEE003DCDF6 /* SplitView(iPad, mac) */,
+				2C1EE25725FB578500589C07 /* ProjectsFlow */,
+				2C1EE25925FB579C00589C07 /* TasksFlow */,
+				2C1EE25F25FB70F200589C07 /* SettingsFlow */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		2C9AA42725C02B7C0045CCFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CF62B2A25C964CD0013DC54 /* Priority.swift */,
+				2C019F5A25E533980098DBD5 /* Project.swift */,
+				2C019F6025E5458C0098DBD5 /* Task.swift */,
+				2C1B65EE25C2AB270046EA6A /* TableViewSection.swift */,
+				2CDFF32E25D2DD0900CCBADD /* TaskDueDate.swift */,
+				2C9AA42325C02B700045CCFE /* TodoistColor.swift */,
+				2CADE07125B85BED00C7DD9B /* Token.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C9AA42A25C02B8C0045CCFE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2CB7A80025E590F1007111E9 /* Managers */,
+				2C3201F0261A01EB005C348D /* Mappers */,
+				2CB7A7FE25E590E8007111E9 /* Services */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2C9CBBCE25CD533900FC9F13 /* DeleteButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				2C9CBBD025CD535700FC9F13 /* DeleteButtonDisplayObject.swift */,
+				2C9CBBC925CD516000FC9F13 /* DeleteButtonCell.swift */,
+				2C9CBBCA25CD516000FC9F13 /* DeleteButtonCell.xib */,
+			);
+			path = DeleteButtonCell;
+			sourceTree = "<group>";
+		};
+		2CA30FA525F3763F00E2CA41 /* EditProject */ = {
+			isa = PBXGroup;
+			children = (
+				2C8552C025D07F9F00163097 /* EditProjectViewController.swift */,
+				2C9D856225F7A64B00DF06F4 /* EditProjectInteractorImpl.swift */,
+				2C9D855F25F7A61700DF06F4 /* EditProjectPresenterImpl.swift */,
+			);
+			path = EditProject;
+			sourceTree = "<group>";
+		};
+		2CA30FA725F3764700E2CA41 /* SelectProjectColor */ = {
+			isa = PBXGroup;
+			children = (
+				2CE153FF25C01525007A3394 /* SelectProjectColorViewController.swift */,
+				2C61A7B225F5174400CF518D /* SelectProjectColorInteractorImpl.swift */,
+				2C61A7B525F5175200CF518D /* SelectProjectColorPresenterImpl.swift */,
+			);
+			path = SelectProjectColor;
+			sourceTree = "<group>";
+		};
+		2CA39BAD2619EF9100937DA2 /* ProjectsList */ = {
+			isa = PBXGroup;
+			children = (
+				2CD90B7225F92571000C8DA2 /* ProjectsListCoordinatorImpl.swift */,
+				2CA39BB32619F07900937DA2 /* ProjectsListCoordinatorProtocol.swift */,
+				2CA39BBA2619F46400937DA2 /* UpdatableWithProjectInfoProtocol.swift */,
+			);
+			path = ProjectsList;
+			sourceTree = "<group>";
+		};
+		2CA39BAE2619EF9A00937DA2 /* EditProject */ = {
+			isa = PBXGroup;
+			children = (
+				2C3000C425FA278C00EBA644 /* EditProjectCoordinatorImpl.swift */,
+				2C3201C62619F69A005C348D /* EditProjectCoordinatorProtocol.swift */,
+			);
+			path = EditProject;
+			sourceTree = "<group>";
+		};
+		2CA39BB02619EFA000937DA2 /* AddProject */ = {
+			isa = PBXGroup;
+			children = (
+				2C3000C725FA2D0F00EBA644 /* AddProjectCoordinatorImpl.swift */,
+				2C3201C92619F781005C348D /* AddProjectCoordinatorProtocol.swift */,
+			);
+			path = AddProject;
+			sourceTree = "<group>";
+		};
+		2CA63D4725E4F59A00E4345A /* NSManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				2CA63D4C25E4F5CA00E4345A /* Task */,
+				2CA63D4A25E4F5AD00E4345A /* Project */,
+				2C3201F6261A04CF005C348D /* DTOCastingError.swift */,
+			);
+			path = NSManagedObjects;
+			sourceTree = "<group>";
+		};
+		2CA63D4A25E4F5AD00E4345A /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				2C2EFFFB25F8CF2F00E4357C /* ProjectModel+CoreDataClass.swift */,
+				2C2EFFFC25F8CF2F00E4357C /* ProjectModel+CoreDataProperties.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		2CA63D4C25E4F5CA00E4345A /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				2C2E000125F8CF3600E4357C /* TaskModel+CoreDataClass.swift */,
+				2C2E000025F8CF3600E4357C /* TaskModel+CoreDataProperties.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		2CA9A7A725DE6EC70055AD83 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				2CF62B2125C871770013DC54 /* AddTaskViewController.swift */,
+				2C61A7C725F6D28400CF518D /* AddTaskInteractorImpl.swift */,
+				2C61A7CA25F6D31A00CF518D /* AddTaskPresenterImpl.swift */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		2CA9A7A925DE6EFC0055AD83 /* ProjectsList */ = {
+			isa = PBXGroup;
+			children = (
+				2C9AA41625C025470045CCFE /* ProjectsListViewController.swift */,
+				2C268EA025F24C6D00340CEF /* ProjectsListInteractorImpl.swift */,
+				2C268E9C25F249E500340CEF /* ProjectsListPresenterImpl.swift */,
+			);
+			path = ProjectsList;
+			sourceTree = "<group>";
+		};
+		2CA9A7AB25DE6F050055AD83 /* ProjectDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2CF62B1E25C859D10013DC54 /* ProjectDetailsViewController.swift */,
+				2C61A7B825F528DF00CF518D /* ProjectDetailsInteractorImpl.swift */,
+				2C61A7BB25F528E900CF518D /* ProjectDetailsPresenterImpl.swift */,
+			);
+			path = ProjectDetails;
+			sourceTree = "<group>";
+		};
+		2CA9A7AD25DE6F180055AD83 /* TasksList */ = {
+			isa = PBXGroup;
+			children = (
+				2C6E3A3225D43B7400652B8D /* TasksListViewController.swift */,
+				2C9D856825F7AB3500DF06F4 /* TasksListInteractorImpl.swift */,
+				2C9D856525F7AB2A00DF06F4 /* TasksListPresenterImpl.swift */,
+			);
+			path = TasksList;
+			sourceTree = "<group>";
+		};
+		2CB7A7FC25E590C4007111E9 /* TasksService */ = {
+			isa = PBXGroup;
+			children = (
+				2C390B1725E9340800F959A0 /* TasksServiceProtocol.swift */,
+				2CF62B4C25C97DFD0013DC54 /* TasksService.swift */,
+				2CA09BE825EE69440001E690 /* TasksLocalService.swift */,
+				2CA09BEB25EE6B9E0001E690 /* TasksRemoteService.swift */,
+				2C64A73025E7E8FE00AD7C72 /* TaskFilteringPredicates.swift */,
+				2C64A73925E7EF8600AD7C72 /* TaskSortDescriptors.swift */,
+				2C52C5562602528900F5817B /* TasksOrderStorage.swift */,
+				2C9FCA31262389610007F6ED /* TasksServiceDelegateProtocol.swift */,
+			);
+			path = TasksService;
+			sourceTree = "<group>";
+		};
+		2CB7A7FE25E590E8007111E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C61564925CC7DD1005F385D /* AuthService */,
+				2C644CB025E58FB9005EF9F8 /* ProjectsService */,
+				2CB7A7FC25E590C4007111E9 /* TasksService */,
+				2C9FCA2326235EB20007F6ED /* MulticastDelegate.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2CB7A80025E590F1007111E9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2C3201EC261A01C1005C348D /* ReachabilityManager */,
+				2C70FE302615BC07003F862E /* SpeechRecognitionManager */,
+				2C6876D625C3228E0058ADB7 /* NetworkManager */,
+				2C52058825E19D9D00C28447 /* StorageManager */,
+				2C67026425F12A1E007B80E6 /* TokenStorageManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2CC9CE8B25BDF60D001EB69E /* ProjectCell */ = {
+			isa = PBXGroup;
+			children = (
+				2C75CD7125CC25D2007C7FB2 /* ProjectCellDisplayObject.swift */,
+				2CC9CE8625BDF605001EB69E /* ProjectCell.swift */,
+				2CC9CE8725BDF605001EB69E /* ProjectCell.xib */,
+			);
+			path = ProjectCell;
+			sourceTree = "<group>";
+		};
+		2CC9CE8D25BEBFB0001EB69E /* TaskCell */ = {
+			isa = PBXGroup;
+			children = (
+				2CF62B5925C9A0A00013DC54 /* TaskCellDisplayObject.swift */,
+				2CC9CE8E25BEC08A001EB69E /* TaskCell.swift */,
+				2CC9CE8F25BEC08A001EB69E /* TaskCell.xib */,
+			);
+			path = TaskCell;
+			sourceTree = "<group>";
+		};
+		2CC9CECB25BF401E001EB69E /* TextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				2CF62B3925C968FC0013DC54 /* TextFieldCellDisplayObject.swift */,
+				2CC9CECC25BF406D001EB69E /* TextFieldCell.swift */,
+				2CC9CECD25BF406D001EB69E /* TextFieldCell.xib */,
+			);
+			path = TextFieldCell;
+			sourceTree = "<group>";
+		};
+		2CC9CED225BF44F2001EB69E /* ToggleButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				2CF62B3325C968C10013DC54 /* ToggleButtonCellDisplayObject.swift */,
+				2CC9CEDA25BF46EF001EB69E /* ToggleButtonCell.swift */,
+				2CC9CEDB25BF46EF001EB69E /* ToggleButtonCell.xib */,
+			);
+			path = ToggleButtonCell;
+			sourceTree = "<group>";
+		};
+		2CCB4E7426026B790091C3DB /* ProjectDetailsFilters */ = {
+			isa = PBXGroup;
+			children = (
+				2CCB4E7526026BAF0091C3DB /* ProjectDetailsFiltersViewController.swift */,
+				2CCB4E7926026C560091C3DB /* ProjectDetailsFiltersInteractorImpl.swift */,
+				2CCB4E7D26026C600091C3DB /* ProjectDetailsFiltersPresenterImpl.swift */,
+			);
+			path = ProjectDetailsFilters;
+			sourceTree = "<group>";
+		};
+		2CD2E26D2622176D00F07319 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2CD2E26826220F7200F07319 /* BaseInterfaceController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2CD2E2712622179200F07319 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2CD2E2752622179C00F07319 /* Managers */,
+				2C9FC9FB262313EE0007F6ED /* Localizable.strings */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2CD2E2752622179C00F07319 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2CD2E26326219E7000F07319 /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2CD43A77261F9B6300D0AB59 /* RowControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CD43A5D261F962E00D0AB59 /* RowControllerType.swift */,
+				2C18E44D261F3E6800C15B87 /* ProjectCellController.swift */,
+				2CD43A7B261F9EF400D0AB59 /* TaskCellController.swift */,
+				2CD43A80261F9F0F00D0AB59 /* MainMenuCellController.swift */,
+				2CD43A85261F9F2700D0AB59 /* TableSectionCellController.swift */,
+				2C9FCA1626233C890007F6ED /* EmptySectionRowController.swift */,
+			);
+			path = RowControllers;
+			sourceTree = "<group>";
+		};
+		2CDAC9B7261F094100B5AC34 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C7F58261F2EB700DAD86E /* Main */,
+				2C4C7F5C261F2EBC00DAD86E /* ProjectsList */,
+				2C4C7F66261F2EC800DAD86E /* ProjectDetails */,
+				2C4C7F6A261F2ECE00DAD86E /* TasksList */,
+				2C4C7F75261F2EDB00DAD86E /* TaskDetails */,
+				2C4C7F71261F2ED600DAD86E /* Schedule */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2CE83D9F25BC71510039F611 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2C00AF4525B6F32B00F50FBD /* AppDelegate.swift */,
+				2C00AF4725B6F32B00F50FBD /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2CE83DA025BC716D0039F611 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2CB6FB8C25CEC6E100412692 /* Storyboards.swift */,
+				2C00AF5325B6F33100F50FBD /* LaunchScreen.storyboard */,
+				2C7E332425CFC56A00DC111A /* Auth.storyboard */,
+				2C00AF4B25B6F32C00F50FBD /* Projectslist.storyboard */,
+				2C8552BA25D034C400163097 /* Projectdetails.storyboard */,
+				2C6E3A3525D444BA00652B8D /* Taskslist.storyboard */,
+				2C6E3A4C25D54FA500652B8D /* Settings.storyboard */,
+				2C6FA2B3261CFCD200BEF76B /* Splitmenu.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2CE83DAA25BC83940039F611 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2C268E7B25F134F800340CEF /* BaseView.swift */,
+				2CF62B3025C968AD0013DC54 /* CellViewModelProtocol.swift */,
+				2CC9CE7925BDC8F6001EB69E /* NibLoadableProtocol+Extension.swift */,
+				2CE83D9825BB27620039F611 /* ReusableViewProtocol+Extension.swift */,
+				2C1EE28225FE8CDD00589C07 /* ToDoObject.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2CEADF07261AFEC800B2B89B /* ToDoWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				2CEADF08261AFEC800B2B89B /* Interface.storyboard */,
+				2CEADF0B261AFED100B2B89B /* Assets.xcassets */,
+				2CEADF0D261AFED100B2B89B /* Info.plist */,
+			);
+			path = ToDoWatchApp;
+			sourceTree = "<group>";
+		};
+		2CEADF16261AFED100B2B89B /* ToDoWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C7F28261F238D00DAD86E /* App */,
+				2C4C7F3C261F2BAB00DAD86E /* Common */,
+				2CD2E2712622179200F07319 /* Components */,
+				2C206C80261F5E97005D0316 /* Models */,
+				2CDAC9B7261F094100B5AC34 /* Scenes */,
+				2CEADF22261AFED400B2B89B /* PushNotificationPayload.apns */,
+				2CEADF1F261AFED400B2B89B /* Assets.xcassets */,
+				2CEADF21261AFED400B2B89B /* Info.plist */,
+			);
+			path = "ToDoWatchApp Extension";
+			sourceTree = "<group>";
+		};
+		2CF62B5D25CAA0C40013DC54 /* TaskPriorityCell */ = {
+			isa = PBXGroup;
+			children = (
+				2CF62B4925C96AAC0013DC54 /* PriorityCellDisplayObject.swift */,
+				2CF62B4225C969AF0013DC54 /* TaskPriorityCell.swift */,
+				2CF62B4325C969AF0013DC54 /* TaskPriorityCell.xib */,
+			);
+			path = TaskPriorityCell;
+			sourceTree = "<group>";
+		};
+		2CFA3C4B261F934700E0CF99 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2CFA3C46261F933F00E0CF99 /* RowTypeConvertible.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		85996FC63CC3964C56D638D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C86E453260A34E200DFB3F1 /* HealthKit.framework */,
+				6084A143F958E4FBC7CFB2C7 /* Pods_ToDoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8C0C804F5837FA46DB7EFEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15F30F57F09B0B7C98A14EE6 /* Pods-ToDoApp.debug.xcconfig */,
+				D972BCEFA3E52233C7CE2CC7 /* Pods-ToDoApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C00AF4125B6F32B00F50FBD /* ToDoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C00AF5925B6F33100F50FBD /* Build configuration list for PBXNativeTarget "ToDoApp" */;
+			buildPhases = (
+				C81E98D8B9650CAFD2E0B346 /* [CP] Check Pods Manifest.lock */,
+				2CE924AD25C7018400CAD487 /* RSwift */,
+				2C00AF3E25B6F32B00F50FBD /* Sources */,
+				2C00AF3F25B6F32B00F50FBD /* Frameworks */,
+				2C00AF4025B6F32B00F50FBD /* Resources */,
+				2C860DB725C4921800C2328C /* SwiftLint */,
+				2CEADF26261AFED400B2B89B /* Embed Watch Content */,
+				16E7A5717617F59AD872D5B0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CEADF24261AFED400B2B89B /* PBXTargetDependency */,
+			);
+			name = ToDoApp;
+			productName = ToDoApp;
+			productReference = 2C00AF4225B6F32B00F50FBD /* ToDoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CEADF05261AFEC800B2B89B /* ToDoWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CEADF2D261AFED400B2B89B /* Build configuration list for PBXNativeTarget "ToDoWatchApp" */;
+			buildPhases = (
+				2CEADF04261AFEC800B2B89B /* Resources */,
+				2CEADF29261AFED400B2B89B /* Embed App Extensions */,
+				6281B7BE519ABFF76BA9E7E6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CEADF15261AFED100B2B89B /* PBXTargetDependency */,
+			);
+			name = ToDoWatchApp;
+			productName = ToDoWatchApp;
+			productReference = 2CEADF06261AFEC800B2B89B /* ToDoWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2CEADF11261AFED100B2B89B /* ToDoWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CEADF2C261AFED400B2B89B /* Build configuration list for PBXNativeTarget "ToDoWatchApp Extension" */;
+			buildPhases = (
+				2CEADF0E261AFED100B2B89B /* Sources */,
+				2CEADF0F261AFED100B2B89B /* Frameworks */,
+				2CEADF10261AFED100B2B89B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ToDoWatchApp Extension";
+			productName = "ToDoWatchApp Extension";
+			productReference = 2CEADF12261AFED100B2B89B /* ToDoWatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C00AF3A25B6F32B00F50FBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					2C00AF4125B6F32B00F50FBD = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					2CEADF05261AFEC800B2B89B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					2CEADF11261AFED100B2B89B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 2C00AF3D25B6F32B00F50FBD /* Build configuration list for PBXProject "ToDoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 2C00AF3925B6F32B00F50FBD;
+			productRefGroup = 2C00AF4325B6F32B00F50FBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C00AF4125B6F32B00F50FBD /* ToDoApp */,
+				2CEADF05261AFEC800B2B89B /* ToDoWatchApp */,
+				2CEADF11261AFED100B2B89B /* ToDoWatchApp Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C00AF4025B6F32B00F50FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6876DF25C326500058ADB7 /* ColorCVCell.xib in Resources */,
+				2CE924A125C6FDB500CAD487 /* Localizable.strings in Resources */,
+				2C00AF5525B6F33100F50FBD /* LaunchScreen.storyboard in Resources */,
+				2CC9CECF25BF406D001EB69E /* TextFieldCell.xib in Resources */,
+				2C27874925C0A2AA00FA8814 /* SelectOptionCell.xib in Resources */,
+				2C6FA2B4261CFCD200BEF76B /* Splitmenu.storyboard in Resources */,
+				2CD2F0B125DEB998009D2D12 /* Colors.xcassets in Resources */,
+				2CC9CE8925BDF605001EB69E /* ProjectCell.xib in Resources */,
+				2C00AF5225B6F33100F50FBD /* Assets.xcassets in Resources */,
+				2C1B660225C2BE330046EA6A /* SelectProjectColorCell.xib in Resources */,
+				2CF62B4525C969AF0013DC54 /* TaskPriorityCell.xib in Resources */,
+				2CC9CEDD25BF46EF001EB69E /* ToggleButtonCell.xib in Resources */,
+				2C8552BB25D034C400163097 /* Projectdetails.storyboard in Resources */,
+				2C6E3A3625D444BA00652B8D /* Taskslist.storyboard in Resources */,
+				2C00AF4D25B6F32C00F50FBD /* Projectslist.storyboard in Resources */,
+				2C7E332525CFC56A00DC111A /* Auth.storyboard in Resources */,
+				2C6E3A4D25D54FA500652B8D /* Settings.storyboard in Resources */,
+				2CC9CE9125BEC08A001EB69E /* TaskCell.xib in Resources */,
+				2C9CBBCC25CD516000FC9F13 /* DeleteButtonCell.xib in Resources */,
+				2C6E3A5225D5A53F00652B8D /* Icons.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CEADF04261AFEC800B2B89B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CEADF0C261AFED100B2B89B /* Assets.xcassets in Resources */,
+				2CEADF0A261AFEC800B2B89B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CEADF10261AFED100B2B89B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CEADF20261AFED400B2B89B /* Assets.xcassets in Resources */,
+				2C9FC9FC262313EE0007F6ED /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16E7A5717617F59AD872D5B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoApp/Pods-ToDoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoApp/Pods-ToDoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToDoApp/Pods-ToDoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C860DB725C4921800C2328C /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		2CE924AD25C7018400CAD487 /* RSwift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = RSwift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		C81E98D8B9650CAFD2E0B346 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C00AF3E25B6F32B00F50FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C00AF4A25B6F32C00F50FBD /* AuthViewController.swift in Sources */,
+				2CF62B4D25C97DFD0013DC54 /* TasksService.swift in Sources */,
+				2CD90B7025F9241E000C8DA2 /* AppCoordinatorImpl.swift in Sources */,
+				2C320214261A1229005C348D /* SpeechRecognitionStatus.swift in Sources */,
+				2C9D855D25F7A37E00DF06F4 /* AddProjectPresenterImpl.swift in Sources */,
+				2CF62B3125C968AD0013DC54 /* CellViewModelProtocol.swift in Sources */,
+				2C8552C125D07F9F00163097 /* EditProjectViewController.swift in Sources */,
+				2CADE07825B85C2B00C7DD9B /* AuthService.swift in Sources */,
+				2C019F6125E5458C0098DBD5 /* Task.swift in Sources */,
+				2C3941F825D947E5003E8FC5 /* ActivityView.swift in Sources */,
+				2CDEB12E25CFFDDD00BB3C5A /* AuthCodeRequestParams.swift in Sources */,
+				2C9D856625F7AB2A00DF06F4 /* TasksListPresenterImpl.swift in Sources */,
+				2CB6FB9525CEE03700412692 /* AuthTokenRequestParams.swift in Sources */,
+				2CC9CE9025BEC08A001EB69E /* TaskCell.swift in Sources */,
+				2C19B1AF25FA7BEB00FC1BBA /* EditTaskCoordinatorImpl.swift in Sources */,
+				2CF62B2E25C9676E0013DC54 /* SelectTaskPriorityViewController.swift in Sources */,
+				2CC9CE7A25BDC8F6001EB69E /* NibLoadableProtocol+Extension.swift in Sources */,
+				2CA39BA22619ED5700937DA2 /* AuthCoordinatorProtocol.swift in Sources */,
+				2CF62B4A25C96AAC0013DC54 /* PriorityCellDisplayObject.swift in Sources */,
+				2CE83D9C25BB29610039F611 /* AddButton.swift in Sources */,
+				2C67026B25F12B0D007B80E6 /* AuthInteractorImpl.swift in Sources */,
+				2C5C4C6526038F8C0000E77D /* TasksListFiltersPresenterImpl.swift in Sources */,
+				2C6876DE25C326500058ADB7 /* ColorCVCell.swift in Sources */,
+				2CA39BB82619F29B00937DA2 /* AddEditProjectCoordinatorProtocol.swift in Sources */,
+				2C64A73A25E7EF8600AD7C72 /* TaskSortDescriptors.swift in Sources */,
+				2CDC204C25F79A0A00718859 /* EditTaskPresenterImpl.swift in Sources */,
+				2C19B1A625FA78A000FC1BBA /* TasksListCoordinatorImpl.swift in Sources */,
+				2CF62B1F25C859D10013DC54 /* ProjectDetailsViewController.swift in Sources */,
+				2CA39BBB2619F46400937DA2 /* UpdatableWithProjectInfoProtocol.swift in Sources */,
+				2C75CD7225CC25D2007C7FB2 /* ProjectCellDisplayObject.swift in Sources */,
+				2C3201F3261A0297005C348D /* ReachabilityError.swift in Sources */,
+				2CF62B5725C98FD90013DC54 /* TaskRequestParams.swift in Sources */,
+				2C9D855A25F7A2F700DF06F4 /* AddProjectInteractorImpl.swift in Sources */,
+				2CA39B9F2619ED0B00937DA2 /* AppCoordinatorProtocol.swift in Sources */,
+				2C9AA42425C02B700045CCFE /* TodoistColor.swift in Sources */,
+				2CB7A80F25E6527A007111E9 /* ProjectsServiceProtocol.swift in Sources */,
+				2C3201C72619F69A005C348D /* EditProjectCoordinatorProtocol.swift in Sources */,
+				2CC9CE8825BDF605001EB69E /* ProjectCell.swift in Sources */,
+				2C64A73125E7E8FE00AD7C72 /* TaskFilteringPredicates.swift in Sources */,
+				2C3201DF2619FBE9005C348D /* EditTaskCoordinatorProtocol.swift in Sources */,
+				2C65FFB025D9ABE700A4C085 /* AuthErrorModel.swift in Sources */,
+				2C70FE322615BC1B003F862E /* SpeechRecognitionManager.swift in Sources */,
+				2CA09BE925EE69440001E690 /* TasksLocalService.swift in Sources */,
+				2CCB4E7626026BAF0091C3DB /* ProjectDetailsFiltersViewController.swift in Sources */,
+				2C1B660525C2CF4B0046EA6A /* SelectProjectViewController.swift in Sources */,
+				2CD17BD225F9313C00BB8BFF /* AuthCoordinatorImpl.swift in Sources */,
+				2C18039A25E51A4800DDA782 /* NSmanagedObject+Extension.swift in Sources */,
+				2C9FCA2426235EB20007F6ED /* MulticastDelegate.swift in Sources */,
+				2C320204261A06C6005C348D /* ProjectsOrderingType.swift in Sources */,
+				2C834238261CCAEA003DCDF6 /* MacSplitCoordinatorImpl.swift in Sources */,
+				2CBC27022609F06200C038AF /* ReachabilityManager.swift in Sources */,
+				2C2E000325F8CF3600E4357C /* TaskModel+CoreDataClass.swift in Sources */,
+				2C6E3A0125D2F7CC00652B8D /* DatePickerViewController.swift in Sources */,
+				2C27874825C0A2AA00FA8814 /* SelectOptionCell.swift in Sources */,
+				2CB7A81625E652B8007111E9 /* ProjectSortDescriptors.swift in Sources */,
+				2CD17BD525F933C100BB8BFF /* TabBarCoordinatorImpl.swift in Sources */,
+				2C390B1825E9340800F959A0 /* TasksServiceProtocol.swift in Sources */,
+				2C61A7B625F5175200CF518D /* SelectProjectColorPresenterImpl.swift in Sources */,
+				2C36D9D126170FD60041BF5D /* Pulsing.swift in Sources */,
+				2CC9CEC825BF3978001EB69E /* AddProjectViewController.swift in Sources */,
+				2C6E3A4A25D54F8E00652B8D /* SettingsViewController.swift in Sources */,
+				2CF62B3725C968E70013DC54 /* SelectOptionCellDisplayObject.swift in Sources */,
+				2C52058E25E19E0C00C28447 /* StorageManager.swift in Sources */,
+				2CE417F925F37ACB002A9915 /* SelectProjectPresenterImpl.swift in Sources */,
+				2C52C55126024A5B00F5817B /* ProjectsOrderStorage.swift in Sources */,
+				2CE417F625F37AC0002A9915 /* SelectProjectInteractorImpl.swift in Sources */,
+				2CB7A81325E6529F007111E9 /* ProjectFilteringPredicates.swift in Sources */,
+				2CADE07525B85C0800C7DD9B /* TokenStorageManager.swift in Sources */,
+				2C3000C525FA278C00EBA644 /* EditProjectCoordinatorImpl.swift in Sources */,
+				2C3201E22619FC08005C348D /* AddTaskCoordinatorProtocol.swift in Sources */,
+				2C3201E52619FC99005C348D /* TaskListCoordinatorProtocol.swift in Sources */,
+				2CF62B5A25C9A0A00013DC54 /* TaskCellDisplayObject.swift in Sources */,
+				2C6E3A3325D43B7400652B8D /* TasksListViewController.swift in Sources */,
+				2C9D856325F7A64B00DF06F4 /* EditProjectInteractorImpl.swift in Sources */,
+				2C1B65F225C2AFEC0046EA6A /* ColorCellDisplayObject.swift in Sources */,
+				2C9AA41725C025470045CCFE /* ProjectsListViewController.swift in Sources */,
+				2C61564325CC7D5F005F385D /* UIColor+Extension.swift in Sources */,
+				2CF62B3D25C969100013DC54 /* SelectProjectColorCellDisplayObject.swift in Sources */,
+				2C61A7C825F6D28400CF518D /* AddTaskInteractorImpl.swift in Sources */,
+				2CE1540025C01525007A3394 /* SelectProjectColorViewController.swift in Sources */,
+				2C268E9325F231FE00340CEF /* BaseViewController.swift in Sources */,
+				2CD90B7325F92571000C8DA2 /* ProjectsListCoordinatorImpl.swift in Sources */,
+				2CF906F0261BA47500958F02 /* SystemHelper.swift in Sources */,
+				2C5C4C6826038F990000E77D /* TasksListFiltersViewController.swift in Sources */,
+				2C61A7B325F5174400CF518D /* SelectProjectColorInteractorImpl.swift in Sources */,
+				2CDFF32F25D2DD0900CCBADD /* TaskDueDate.swift in Sources */,
+				2C61A7BC25F528E900CF518D /* ProjectDetailsPresenterImpl.swift in Sources */,
+				2CF62B3425C968C10013DC54 /* ToggleButtonCellDisplayObject.swift in Sources */,
+				2C6876D825C322C90058ADB7 /* ProjectRequestParams.swift in Sources */,
+				2C0B84B32600F83E00AF8A99 /* ProjectFiltersViewController.swift in Sources */,
+				2C61A7C125F6B16F00CF518D /* SettingsPresenterImpl.swift in Sources */,
+				2C0E5F15261E1083006B84A2 /* MainSplitCoordinatorProtocol.swift in Sources */,
+				2C19B1AC25FA7B7700FC1BBA /* AddTaskCoordinatorImpl.swift in Sources */,
+				2C3201D52619F9B0005C348D /* AddEditTaskCoordinatorProtocol.swift in Sources */,
+				2C36D9D5261716050041BF5D /* SpeechRecognitionAvailability.swift in Sources */,
+				2C2E000225F8CF3600E4357C /* TaskModel+CoreDataProperties.swift in Sources */,
+				2CA2B8C7262062C600C8862C /* WatchDataTypeSyncKey.swift in Sources */,
+				2CADE07225B85BED00C7DD9B /* Token.swift in Sources */,
+				2C00AF4625B6F32B00F50FBD /* AppDelegate.swift in Sources */,
+				2C1EE28325FE8CDD00589C07 /* ToDoObject.swift in Sources */,
+				2C390B2425E960A200F959A0 /* StorageManagerError.swift in Sources */,
+				2CE83D9925BB27620039F611 /* ReusableViewProtocol+Extension.swift in Sources */,
+				2CDC204F25F79A4F00718859 /* EditTaskInteractorImpl.swift in Sources */,
+				2C320201261A066E005C348D /* ProjectsServiceDelegateProtocol.swift in Sources */,
+				2CB6FB7125CEC35500412692 /* NSObject+Extension.swift in Sources */,
+				2C9D856925F7AB3500DF06F4 /* TasksListInteractorImpl.swift in Sources */,
+				2C9AA42025C02B0F0045CCFE /* ProjectDTO.swift in Sources */,
+				2C9CBBD125CD535700FC9F13 /* DeleteButtonDisplayObject.swift in Sources */,
+				2C0E5EE7261DA86D006B84A2 /* SplitViewMasterScreenSections.swift in Sources */,
+				2CB7A81A25E65309007111E9 /* AuthServiceProtocol.swift in Sources */,
+				2C1B660125C2BE330046EA6A /* SelectProjectColorCell.swift in Sources */,
+				2C019F5B25E533980098DBD5 /* Project.swift in Sources */,
+				2C61A7C425F6B18500CF518D /* SettingsInteractorImpl.swift in Sources */,
+				2C2EFFFD25F8CF2F00E4357C /* ProjectModel+CoreDataClass.swift in Sources */,
+				2C9CBBD525CD554200FC9F13 /* UIViewController+Extension.swift in Sources */,
+				2C61A7A325F4C74100CF518D /* DatePickerPresenterImpl.swift in Sources */,
+				2C6FA2C5261CFEC500BEF76B /* SplitViewMenuPresenterImpl.swift in Sources */,
+				2CA180D225ED03A40020BE72 /* EndPointType.swift in Sources */,
+				2CA180E225ED6C120020BE72 /* ProjectsLocalService.swift in Sources */,
+				2C9CBBCB25CD516000FC9F13 /* DeleteButtonCell.swift in Sources */,
+				2CA2B8D0262064A000C8862C /* WatchConnectivityError.swift in Sources */,
+				2C32020B261A086D005C348D /* CompletionTypealias.swift in Sources */,
+				2CD90B6D25F923D0000C8DA2 /* CoordinatorProtocol.swift in Sources */,
+				2C9D856025F7A61700DF06F4 /* EditProjectPresenterImpl.swift in Sources */,
+				2C9D855725F7A2C000DF06F4 /* AddEditProjectScreenSections.swift in Sources */,
+				2C2EFFFE25F8CF2F00E4357C /* ProjectModel+CoreDataProperties.swift in Sources */,
+				2C61564025CC7D38005F385D /* UICollectionView+Extension.swift in Sources */,
+				2C268E9625F23A7C00340CEF /* TableView.swift in Sources */,
+				2C86E45C260B600E00DFB3F1 /* NoNetworkView.swift in Sources */,
+				2C3201E92619FCEC005C348D /* SettingsCoordinatorProtocol.swift in Sources */,
+				2CB6FB8D25CEC6E100412692 /* Storyboards.swift in Sources */,
+				2C00AF4825B6F32B00F50FBD /* SceneDelegate.swift in Sources */,
+				2C52058A25E19DBD00C28447 /* CoreDataStack.swift in Sources */,
+				2C3201F7261A04CF005C348D /* DTOCastingError.swift in Sources */,
+				2CF62B3A25C968FC0013DC54 /* TextFieldCellDisplayObject.swift in Sources */,
+				2C6E3A2F25D429A400652B8D /* MainTabBarController.swift in Sources */,
+				2C268E7C25F134F800340CEF /* BaseView.swift in Sources */,
+				2C1EE27825FE3D1A00589C07 /* SearchController.swift in Sources */,
+				2C5C4C6126038F820000E77D /* TasksListFiltersInteractorImpl.swift in Sources */,
+				2CA180E525ED6C2B0020BE72 /* ProjectsRemoteService.swift in Sources */,
+				2C67026725F12AFB007B80E6 /* AuthPresenterImpl.swift in Sources */,
+				2C52C5572602528900F5817B /* TasksOrderStorage.swift in Sources */,
+				2CA39BA72619EE8000937DA2 /* AuthCoordinatorType.swift in Sources */,
+				2C644CAB25E5737C005EF9F8 /* DTOConfigurable.swift in Sources */,
+				2C268E9D25F249E500340CEF /* ProjectsListPresenterImpl.swift in Sources */,
+				2C9FCA32262389610007F6ED /* TasksServiceDelegateProtocol.swift in Sources */,
+				2C268EA125F24C6D00340CEF /* ProjectsListInteractorImpl.swift in Sources */,
+				2CE175B925D68C3100D38F51 /* Bool+Extension.swift in Sources */,
+				2C9AA41D25C0296C0045CCFE /* ProjectsService.swift in Sources */,
+				2C61A7B925F528DF00CF518D /* ProjectDetailsInteractorImpl.swift in Sources */,
+				2C1EE25C25FB594E00589C07 /* SettingsCoordinatorImpl.swift in Sources */,
+				2CDC204925F798F000718859 /* AddEditTaskScreenSections.swift in Sources */,
+				2C0B84B92601190300AF8A99 /* ProjectFiltersInteractorImpl.swift in Sources */,
+				2C3201CA2619F781005C348D /* AddProjectCoordinatorProtocol.swift in Sources */,
+				2CF62B4425C969AF0013DC54 /* TaskPriorityCell.swift in Sources */,
+				2C3201FA261A053C005C348D /* TokenStorageError.swift in Sources */,
+				2C3000C225FA01BC00EBA644 /* NavController.swift in Sources */,
+				2C78467E25E3D59300875168 /* DateFormatter+Extension.swift in Sources */,
+				2CCB4E7E26026C600091C3DB /* ProjectDetailsFiltersPresenterImpl.swift in Sources */,
+				2C0B84BC2601191300AF8A99 /* ProjectFiltersPresenterImpl.swift in Sources */,
+				2CA09BEC25EE6B9E0001E690 /* TasksRemoteService.swift in Sources */,
+				2CC9CECE25BF406D001EB69E /* TextFieldCell.swift in Sources */,
+				2C3000C825FA2D0F00EBA644 /* AddProjectCoordinatorImpl.swift in Sources */,
+				2CC9CEDC25BF46EF001EB69E /* ToggleButtonCell.swift in Sources */,
+				2CF62B5025C980E60013DC54 /* TaskDTO.swift in Sources */,
+				2C3201D82619F9E1005C348D /* UpdatableWithTaskInfoProtocol.swift in Sources */,
+				2C9CBBC625CD490D00FC9F13 /* EditTaskViewController.swift in Sources */,
+				2CB6FB7925CEC4E400412692 /* UIView+NibLoadable+ReusableView.swift in Sources */,
+				2C61A7AD25F4C75200CF518D /* DatePickerInteractorImpl.swift in Sources */,
+				2CF0615225E7C1BC00B26712 /* StoreContainer.swift in Sources */,
+				2C6FA2BA261CFE9C00BEF76B /* SplitViewMenuInteractorImpl.swift in Sources */,
+				2CA39BAA2619EEF100937DA2 /* TabBarCoordinatorProtocol.swift in Sources */,
+				2C70FE3D2615BEA7003F862E /* SpeechRecordButton.swift in Sources */,
+				2C61A79225F42DC800CF518D /* SelectTaskPriorityPresenterImpl.swift in Sources */,
+				2CF62B2B25C964CD0013DC54 /* Priority.swift in Sources */,
+				2CE924B625C7024F00CAD487 /* R.generated.swift in Sources */,
+				2C644CA825E5719A005EF9F8 /* DataTransferObject.swift in Sources */,
+				2CF62B2225C871770013DC54 /* AddTaskViewController.swift in Sources */,
+				2CA39BB42619F07900937DA2 /* ProjectsListCoordinatorProtocol.swift in Sources */,
+				2CA180CA25ED039A0020BE72 /* NetworkManager.swift in Sources */,
+				2CA63D3325E41FC000E4345A /* Array+Extensions.swift in Sources */,
+				2C0E5F01261DD5AA006B84A2 /* SplitViewController.swift in Sources */,
+				2C27874C25C0AB1000FA8814 /* NetworkUtilities.swift in Sources */,
+				2C61A7CB25F6D31A00CF518D /* AddTaskPresenterImpl.swift in Sources */,
+				2C5C4C6C2603CECA0000E77D /* TaskSectionsMapper.swift in Sources */,
+				2C1B65EF25C2AB270046EA6A /* TableViewSection.swift in Sources */,
+				2C36D9D8261716150041BF5D /* SpeechRecognitionError.swift in Sources */,
+				2CD2E23F262067BC00F07319 /* TasksListSection.swift in Sources */,
+				2C3201FD261A05CC005C348D /* AuthError.swift in Sources */,
+				2CCB4E7A26026C560091C3DB /* ProjectDetailsFiltersInteractorImpl.swift in Sources */,
+				2CA180D525ED03A40020BE72 /* EndPointTypeProtocol.swift in Sources */,
+				2C00AF5025B6F32C00F50FBD /* ToDoApp.xcdatamodeld in Sources */,
+				2C61A79625F42DE000CF518D /* SelectTaskPriorityInteractorImpl.swift in Sources */,
+				2CD2E2542621956A00F07319 /* Date+Extension.swift in Sources */,
+				2CE153FD25BF4B8E007A3394 /* UITableView+Extension.swift in Sources */,
+				2C6FA2AF261CFCB600BEF76B /* SplitMenuViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CEADF0E261AFED100B2B89B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD2E243262067C400F07319 /* TasksListSection.swift in Sources */,
+				2C206C7C261F5E92005D0316 /* MainMenuItem.swift in Sources */,
+				2C4C7F24261F171D00DAD86E /* TaskDetailsInterfaceController.swift in Sources */,
+				2C9FC9F7262305420007F6ED /* UIColor+Extension.swift in Sources */,
+				2CDAC98E261F00C200B5AC34 /* MainInterfaceController.swift in Sources */,
+				2CD43A42261F945400D0AB59 /* NSObject+Extension.swift in Sources */,
+				2CDAC9AE261F063500B5AC34 /* TasksListInterfaceController.swift in Sources */,
+				2CDAC9B3261F066400B5AC34 /* ScheduleInterfaceController.swift in Sources */,
+				2C206C56261F5A76005D0316 /* Project.swift in Sources */,
+				2CEADF1C261AFED100B2B89B /* NotificationController.swift in Sources */,
+				2C4C7F50261F2E4100DAD86E /* InterfaceControllerList.swift in Sources */,
+				2CD2E228262066EB00F07319 /* TaskSectionsMapper.swift in Sources */,
+				2C18E44E261F3E6800C15B87 /* ProjectCellController.swift in Sources */,
+				2CEADF1E261AFED100B2B89B /* ComplicationController.swift in Sources */,
+				2CEADF1A261AFED100B2B89B /* ExtensionDelegate.swift in Sources */,
+				2CFA3C47261F934000E0CF99 /* RowTypeConvertible.swift in Sources */,
+				2C9FCA2826236F450007F6ED /* Bool+Extension.swift in Sources */,
+				2CD43A86261F9F2700D0AB59 /* TableSectionCellController.swift in Sources */,
+				2CA2B8CB262062DC00C8862C /* WatchDataTypeSyncKey.swift in Sources */,
+				2C4C7F38261F2BA500DAD86E /* WKInterfaceController+Extension.swift in Sources */,
+				2C9FC9F3262305360007F6ED /* TodoistColor.swift in Sources */,
+				2CD43A5E261F962E00D0AB59 /* RowControllerType.swift in Sources */,
+				2CD2E247262067D500F07319 /* Array+Extensions.swift in Sources */,
+				2CD2E26926220F7200F07319 /* BaseInterfaceController.swift in Sources */,
+				2CD43A7C261F9EF400D0AB59 /* TaskCellController.swift in Sources */,
+				2CD2E25F26219C6100F07319 /* DateFormatter+Extension.swift in Sources */,
+				2C9FCA2D262377AA0007F6ED /* Notification+Extension.swift in Sources */,
+				2C81153C261F66450095548F /* ToDoObject.swift in Sources */,
+				2C9FCA1726233C890007F6ED /* EmptySectionRowController.swift in Sources */,
+				2CD43A50261F955700D0AB59 /* WKInterfaceTable+Extension.swift in Sources */,
+				2CDAC9A9261F05CE00B5AC34 /* ProjectDetailsInterfaceController.swift in Sources */,
+				2C206C52261F5A74005D0316 /* Task.swift in Sources */,
+				2CD2E2582621960000F07319 /* Date+Extension.swift in Sources */,
+				2CD2E26426219E7000F07319 /* StorageManager.swift in Sources */,
+				2CDAC9A4261F056C00B5AC34 /* ProjectsListInterfaceController.swift in Sources */,
+				2CD43A81261F9F0F00D0AB59 /* MainMenuCellController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CEADF15261AFED100B2B89B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CEADF11261AFED100B2B89B /* ToDoWatchApp Extension */;
+			targetProxy = 2CEADF14261AFED100B2B89B /* PBXContainerItemProxy */;
+		};
+		2CEADF24261AFED400B2B89B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 2CEADF05261AFEC800B2B89B /* ToDoWatchApp */;
+			targetProxy = 2CEADF23261AFED400B2B89B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C00AF4B25B6F32C00F50FBD /* Projectslist.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C00AF4C25B6F32C00F50FBD /* Base */,
+			);
+			name = Projectslist.storyboard;
+			sourceTree = "<group>";
+		};
+		2C00AF5325B6F33100F50FBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C00AF5425B6F33100F50FBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2CE924A325C6FDB500CAD487 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CE924A225C6FDB500CAD487 /* en */,
+				2CE924A525C6FE3100CAD487 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2CEADF08261AFEC800B2B89B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CEADF09261AFEC800B2B89B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C00AF5725B6F33100F50FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C00AF5825B6F33100F50FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C00AF5A25B6F33100F50FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F30F57F09B0B7C98A14EE6 /* Pods-ToDoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToDoApp/ToDoApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GZMKX7A59M;
+				INFOPLIST_FILE = ToDoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meroshenko.ToDoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C00AF5B25B6F33100F50FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D972BCEFA3E52233C7CE2CC7 /* Pods-ToDoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToDoApp/ToDoApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GZMKX7A59M;
+				INFOPLIST_FILE = ToDoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meroshenko.ToDoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2CEADF27261AFED400B2B89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GZMKX7A59M;
+				IBSC_MODULE = ToDoWatchApp_Extension;
+				INFOPLIST_FILE = ToDoWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = meroshenko.ToDoApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		2CEADF28261AFED400B2B89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GZMKX7A59M;
+				IBSC_MODULE = ToDoWatchApp_Extension;
+				INFOPLIST_FILE = ToDoWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = meroshenko.ToDoApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		2CEADF2A261AFED400B2B89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GZMKX7A59M;
+				INFOPLIST_FILE = "ToDoWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meroshenko.ToDoApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		2CEADF2B261AFED400B2B89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GZMKX7A59M;
+				INFOPLIST_FILE = "ToDoWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meroshenko.ToDoApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C00AF3D25B6F32B00F50FBD /* Build configuration list for PBXProject "ToDoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C00AF5725B6F33100F50FBD /* Debug */,
+				2C00AF5825B6F33100F50FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C00AF5925B6F33100F50FBD /* Build configuration list for PBXNativeTarget "ToDoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C00AF5A25B6F33100F50FBD /* Debug */,
+				2C00AF5B25B6F33100F50FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CEADF2C261AFED400B2B89B /* Build configuration list for PBXNativeTarget "ToDoWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CEADF2A261AFED400B2B89B /* Debug */,
+				2CEADF2B261AFED400B2B89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CEADF2D261AFED400B2B89B /* Build configuration list for PBXNativeTarget "ToDoWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CEADF27261AFED400B2B89B /* Debug */,
+				2CEADF28261AFED400B2B89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C00AF4E25B6F32C00F50FBD /* ToDoApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C00AF4F25B6F32C00F50FBD /* ToDoApp.xcdatamodel */,
+			);
+			currentVersion = 2C00AF4F25B6F32C00F50FBD /* ToDoApp.xcdatamodel */;
+			path = ToDoApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2C00AF3A25B6F32B00F50FBD /* Project object */;
+}

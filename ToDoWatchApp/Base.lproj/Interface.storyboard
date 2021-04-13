@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <!--ToDoApp-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="MainInterfaceController" title="ToDoApp" id="AgC-eL-Hgc" customClass="MainInterfaceController" customModule="ToDoWatchApp_Extension">
+                    <items>
+                        <separator alignment="left" id="1E3-bl-7s6">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <table alignment="left" id="1nH-Xc-QTM">
+                            <items>
+                                <tableRow identifier="MainMenuCellController" id="yxv-ON-e0P" customClass="MainMenuCellController" customModule="ToDoWatchApp_Extension">
+                                    <group key="rootItem" width="1" height="45" alignment="left" spacing="5" id="gka-q7-SAb">
+                                        <items>
+                                            <imageView width="25" height="25" alignment="left" verticalAlignment="center" image="checkmark.circle.fill" catalog="system" id="Wjo-vd-Jnc">
+                                                <color key="tintColor" name="Accent"/>
+                                            </imageView>
+                                            <label width="0.80000000000000004" alignment="left" verticalAlignment="center" text="Label" numberOfLines="2" id="rJs-ap-Trk">
+                                                <fontDescription key="font" type="system" weight="medium" pointSize="14"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleImage" destination="Wjo-vd-Jnc" id="ON1-qf-FJK"/>
+                                        <outlet property="titleLabel" destination="rJs-ap-Trk" id="rp9-8A-0d7"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <group width="1" alignment="center" verticalAlignment="center" hidden="YES" layout="vertical" id="7wg-YZ-90l">
+                            <items>
+                                <imageView width="70" height="70" alignment="center" image="Image" id="QsY-GM-ycz"/>
+                                <label alignment="center" verticalAlignment="center" text="Label" numberOfLines="3" id="dYj-IB-xTR">
+                                    <color key="textColor" name="Accent"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="emptyViewGroup" destination="7wg-YZ-90l" id="dQh-AG-cag"/>
+                        <outlet property="emptyViewImage" destination="QsY-GM-ycz" id="tLA-yF-rrY"/>
+                        <outlet property="emptyViewTitleLabel" destination="dYj-IB-xTR" id="GUm-V9-ntW"/>
+                        <outlet property="table" destination="1nH-Xc-QTM" id="L8L-jL-GTh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1350.391304347826" y="539.59821428571433"/>
+        </scene>
+        <!--Tasks-->
+        <scene sceneID="OL1-ty-ecd">
+            <objects>
+                <controller identifier="TasksListInterfaceController" title="Tasks" id="6uu-xE-FIf" customClass="TasksListInterfaceController" customModule="ToDoWatchApp_Extension">
+                    <items>
+                        <table alignment="left" id="kK3-GW-PHU">
+                            <items>
+                                <tableRow identifier="TableSectionCellController" id="D7Y-Fj-Cr0" customClass="TableSectionCellController" customModule="ToDoWatchApp_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="bIc-Bb-lkA">
+                                        <items>
+                                            <separator alignment="left" hidden="YES" id="KXB-mr-pcS">
+                                                <color key="color" red="0.53969535440000005" green="0.53969535440000005" blue="0.53969535440000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </separator>
+                                            <group width="0.90000000000000002" alignment="left" verticalAlignment="center" spacing="8" id="f9L-am-MGt">
+                                                <items>
+                                                    <imageView width="15" height="15" alignment="left" verticalAlignment="center" image="rectangle.stack.fill" catalog="system" id="12b-1u-5LC">
+                                                        <color key="tintColor" red="0.53969627919823226" green="0.53969627919823226" blue="0.53969627919823226" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </imageView>
+                                                    <label alignment="left" verticalAlignment="center" text="Some project" textAlignment="left" numberOfLines="2" id="Qnb-da-V3j">
+                                                        <color key="textColor" red="0.53969535442313765" green="0.53969535442313765" blue="0.53969535442313765" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="font" type="system" weight="medium" pointSize="14"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleImage" destination="12b-1u-5LC" id="My7-Sh-Yql"/>
+                                        <outlet property="titleLabel" destination="Qnb-da-V3j" id="GmI-PE-8qK"/>
+                                        <outlet property="topSeparator" destination="KXB-mr-pcS" id="XJA-Vg-FA1"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="TaskCellController" id="GfL-Vk-C4t" customClass="TaskCellController" customModule="ToDoWatchApp_Extension">
+                                    <group key="rootItem" width="1" height="45" alignment="left" spacing="5" id="B76-wg-Ok0">
+                                        <items>
+                                            <separator height="20" alignment="left" verticalAlignment="center" id="81q-pt-bFH">
+                                                <color key="color" name="NoNetworkBannerBackgroundColor"/>
+                                            </separator>
+                                            <label width="0.80000000000000004" alignment="left" verticalAlignment="center" text="Some task" numberOfLines="2" id="EhB-A1-YLg">
+                                                <fontDescription key="font" type="system" weight="medium" pointSize="14"/>
+                                            </label>
+                                            <group alignment="right" layout="vertical" spacing="5" id="vSi-1c-xdg" userLabel="Outdated Group">
+                                                <items>
+                                                    <separator alignment="left" id="A3J-Lh-hHi">
+                                                        <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </separator>
+                                                    <imageView width="15" height="13" alignment="right" verticalAlignment="center" image="calendar.badge.exclamationmark" catalog="system" animationDuration="2" id="gh0-Nk-hwM">
+                                                        <color key="tintColor" name="Accent"/>
+                                                    </imageView>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="outdatedGroup" destination="vSi-1c-xdg" id="9Co-ZU-xpV"/>
+                                        <outlet property="outdatedIcon" destination="gh0-Nk-hwM" id="waQ-Np-xle"/>
+                                        <outlet property="priorityView" destination="81q-pt-bFH" id="r8m-eE-pVP"/>
+                                        <outlet property="titleLabel" destination="EhB-A1-YLg" id="Pfi-eS-pMd"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label alignment="center" verticalAlignment="center" hidden="YES" text="Label" textAlignment="center" numberOfLines="3" id="ObG-5f-MFB">
+                            <color key="textColor" name="Accent"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="emptyViewTitleLabel" destination="ObG-5f-MFB" id="5yl-L3-ebC"/>
+                        <outlet property="table" destination="kK3-GW-PHU" id="Fe8-dw-YgA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1560" y="540"/>
+        </scene>
+        <!--TaskDetailsInterfaceController-->
+        <scene sceneID="7qk-Ta-rop">
+            <objects>
+                <controller identifier="TaskDetailsInterfaceController" id="0Iw-8n-lSi" customClass="TaskDetailsInterfaceController" customModule="ToDoWatchApp_Extension">
+                    <items>
+                        <separator alignment="left" id="dt5-EL-xei">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <group width="1" alignment="left" layout="vertical" spacing="15" id="XXE-SA-hwB" userLabel="Main group">
+                            <items>
+                                <label width="1" alignment="left" text="Some task with long name that takes 2 lines" textAlignment="left" numberOfLines="2" id="bR0-kT-z8x">
+                                    <color key="textColor" name="Accent"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                </label>
+                                <group width="1" alignment="left" animationDuration="1" layout="vertical" spacing="5" id="sU5-F4-yG7" userLabel="General info group">
+                                    <items>
+                                        <group width="1" alignment="left" layout="vertical" spacing="2" id="Gbg-5N-1xi">
+                                            <items>
+                                                <label alignment="left" verticalAlignment="center" text="Label" id="nzi-Dd-Kd2">
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                </label>
+                                                <group width="1" alignment="left" id="mSc-ib-QUl">
+                                                    <items>
+                                                        <label alignment="left" verticalAlignment="center" text="Due date:" textAlignment="left" id="vXg-Hd-l67">
+                                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                        </label>
+                                                        <label alignment="right" verticalAlignment="center" hidden="YES" text="Label" textAlignment="right" id="RSa-mB-09J">
+                                                            <color key="textColor" name="Accent"/>
+                                                            <fontDescription key="font" type="boldSystem" pointSize="10"/>
+                                                        </label>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" layout="vertical" spacing="2" id="Yy9-Od-Qgm" userLabel="Priority Group">
+                                            <items>
+                                                <label alignment="left" text="Priority:" id="zak-qa-bc5">
+                                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                </label>
+                                                <label alignment="left" verticalAlignment="center" text="Label" id="PZ7-pi-eBH">
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" layout="vertical" spacing="2" id="mUz-cM-JwS" userLabel="Related project info group">
+                                            <items>
+                                                <label alignment="left" text="Related project:" id="yZh-h0-DB1">
+                                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                </label>
+                                                <label alignment="left" verticalAlignment="center" text="Label" numberOfLines="3" id="AYh-ej-fvA">
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="dueDetailLabel" destination="nzi-Dd-Kd2" id="K2v-7K-L9u"/>
+                        <outlet property="dueGroup" destination="Gbg-5N-1xi" id="ucp-RH-vLt"/>
+                        <outlet property="dueTitleLabel" destination="vXg-Hd-l67" id="AYE-oW-R9E"/>
+                        <outlet property="generalInfoGroup" destination="sU5-F4-yG7" id="cPd-Lo-lP1"/>
+                        <outlet property="outdatedLabel" destination="RSa-mB-09J" id="Avh-ql-2tO"/>
+                        <outlet property="priorityDetailLabel" destination="PZ7-pi-eBH" id="gNq-fy-tx2"/>
+                        <outlet property="priorityGroup" destination="Yy9-Od-Qgm" id="gFP-Rh-WGu"/>
+                        <outlet property="priorityTitleLabel" destination="zak-qa-bc5" id="o3d-RW-dlt"/>
+                        <outlet property="relatedProjectDetailLabel" destination="AYh-ej-fvA" id="SCf-uW-coG"/>
+                        <outlet property="relatedProjectTitleLabel" destination="yZh-h0-DB1" id="V4j-4j-qCZ"/>
+                        <outlet property="taskNameLabel" destination="bR0-kT-z8x" id="TPu-Yh-Fh4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1764" y="540"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="1094" y="532"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="ToDoWatchApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="253"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="ToDoWatchApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="804"/>
+        </scene>
+        <!--Projects-->
+        <scene sceneID="NL6-DV-gAs">
+            <objects>
+                <controller identifier="ProjectsListInterfaceController" title="Projects" id="jxG-oX-Whb" customClass="ProjectsListInterfaceController" customModule="ToDoWatchApp_Extension">
+                    <items>
+                        <separator alignment="left" id="zcX-Oc-XKj">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <table alignment="center" id="v7z-R3-wDH">
+                            <items>
+                                <tableRow identifier="ProjectCellController" id="CAJ-qx-V67" customClass="ProjectCellController" customModule="ToDoWatchApp_Extension">
+                                    <group key="rootItem" width="1" height="45" alignment="left" spacing="8" id="rao-z6-2EI" userLabel="Main group">
+                                        <items>
+                                            <group width="1" alignment="left" verticalAlignment="center" id="2NP-7T-f3I" userLabel="Content">
+                                                <items>
+                                                    <group alignment="left" verticalAlignment="center" spacing="0.0" id="lu7-GQ-eUf" userLabel="Icons group">
+                                                        <items>
+                                                            <imageView width="25" height="25" alignment="left" verticalAlignment="center" image="tray.fill" catalog="system" contentMode="center" id="Lto-Mm-f2B">
+                                                                <color key="tintColor" name="Accent"/>
+                                                            </imageView>
+                                                            <imageView width="8" height="8" alignment="left" image="bookmark.fill" catalog="system" id="eot-PY-FcD">
+                                                                <color key="tintColor" name="NoNetworkBannerBackgroundColor"/>
+                                                            </imageView>
+                                                        </items>
+                                                    </group>
+                                                    <label width="0.80000000000000004" alignment="left" verticalAlignment="center" text="Label Label L" textAlignment="left" numberOfLines="2" id="vRG-aC-m0j">
+                                                        <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="favoriteView" destination="eot-PY-FcD" id="s8q-En-Fwa"/>
+                                        <outlet property="titleImage" destination="Lto-Mm-f2B" id="BjD-Ql-Kg6"/>
+                                        <outlet property="titleLabel" destination="vRG-aC-m0j" id="3Xb-qP-ogX"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label alignment="center" verticalAlignment="center" hidden="YES" text="Label" textAlignment="center" numberOfLines="3" id="fmi-sL-qAq">
+                            <color key="textColor" name="Accent"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="emptyViewTitleLabel" destination="fmi-sL-qAq" id="NaL-iz-ZEb"/>
+                        <outlet property="table" destination="v7z-R3-wDH" id="ZgU-Kq-R3h"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1560" y="271"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="aFn-6t-LQ7">
+            <objects>
+                <controller identifier="ScheduleInterfaceController" title="Schedule" id="c7e-wo-QGX" customClass="ScheduleInterfaceController" customModule="ToDoWatchApp_Extension">
+                    <items>
+                        <table alignment="left" id="iP9-tM-SAz">
+                            <items>
+                                <tableRow identifier="TableSectionCellController" id="LBZ-P4-ln1" customClass="TableSectionCellController" customModule="ToDoWatchApp_Extension">
+                                    <group key="rootItem" width="1" height="30" alignment="left" layout="vertical" id="fr4-h7-0gH">
+                                        <items>
+                                            <separator alignment="left" id="iW5-te-CVK">
+                                                <color key="color" red="0.53969535440000005" green="0.53969535440000005" blue="0.53969535440000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </separator>
+                                            <group width="1" alignment="left" verticalAlignment="center" spacing="8" id="7ed-Wv-tWJ">
+                                                <items>
+                                                    <imageView width="15" height="15" alignment="left" verticalAlignment="center" image="calendar" catalog="system" id="6vl-dl-Xhz">
+                                                        <color key="tintColor" red="0.53969535442313765" green="0.53969535442313765" blue="0.53969535442313765" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </imageView>
+                                                    <label alignment="left" verticalAlignment="center" text="Wed, 01/01/2001 " textAlignment="left" numberOfLines="2" id="f0k-sk-scF">
+                                                        <color key="textColor" red="0.53969535442313765" green="0.53969535442313765" blue="0.53969535442313765" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="font" type="system" weight="medium" pointSize="14"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleImage" destination="6vl-dl-Xhz" id="kIG-1b-1NS"/>
+                                        <outlet property="titleLabel" destination="f0k-sk-scF" id="sgo-SV-cxb"/>
+                                        <outlet property="topSeparator" destination="iW5-te-CVK" id="pBU-ip-v9T"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="TaskCellController" id="mkq-pW-AVI" customClass="TaskCellController" customModule="ToDoWatchApp_Extension">
+                                    <group key="rootItem" width="1" height="45" alignment="left" spacing="5" id="pmf-6q-7mU">
+                                        <items>
+                                            <separator height="20" alignment="left" verticalAlignment="center" id="UnP-4z-ASq">
+                                                <color key="color" name="NoNetworkBannerBackgroundColor"/>
+                                            </separator>
+                                            <label alignment="left" verticalAlignment="center" text="Some task" numberOfLines="2" id="R3H-iZ-N4s">
+                                                <fontDescription key="font" type="system" weight="medium" pointSize="14"/>
+                                            </label>
+                                            <group alignment="right" layout="vertical" spacing="5" id="fkT-pi-JL7" userLabel="Outdated Group">
+                                                <items>
+                                                    <separator alignment="left" id="qkT-8o-GnI">
+                                                        <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </separator>
+                                                    <imageView width="15" height="13" alignment="right" verticalAlignment="center" image="calendar.badge.exclamationmark" catalog="system" animationDuration="2" id="IVV-iR-Qsv">
+                                                        <color key="tintColor" name="Accent"/>
+                                                    </imageView>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="outdatedGroup" destination="fkT-pi-JL7" id="kFn-eb-xm1"/>
+                                        <outlet property="outdatedIcon" destination="IVV-iR-Qsv" id="I76-jO-ppX"/>
+                                        <outlet property="priorityView" destination="UnP-4z-ASq" id="ZvG-3w-DSV"/>
+                                        <outlet property="titleLabel" destination="R3H-iZ-N4s" id="tCp-rL-bGp"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="EmptySectionRowController" id="EdR-5T-5cK" customClass="EmptySectionRowController" customModule="ToDoWatchApp_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="MSd-6z-MTr">
+                                        <items>
+                                            <label width="0.90000000000000002" alignment="left" verticalAlignment="center" text="No tasks for this day" id="B3Z-un-mox">
+                                                <color key="textColor" red="0.53969535440000005" green="0.53969535440000005" blue="0.53969535440000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="B3Z-un-mox" id="t9Y-YT-qAx"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label alignment="center" verticalAlignment="center" hidden="YES" text="Label" textAlignment="center" numberOfLines="3" id="fzx-Az-LrB" userLabel="EmtpyViewLabel">
+                            <color key="textColor" name="Accent"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="emptyViewLabel" destination="fzx-Az-LrB" id="QYR-4l-ZyC"/>
+                        <outlet property="table" destination="iP9-tM-SAz" id="RUN-6V-kyk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1559.5652173913043" y="803.70535714285711"/>
+        </scene>
+        <!--ProjectDetailsInterfaceController-->
+        <scene sceneID="73P-MA-qlI">
+            <objects>
+                <controller identifier="ProjectDetailsInterfaceController" id="7gl-5x-pOd" customClass="ProjectDetailsInterfaceController" customModule="ToDoWatchApp_Extension">
+                    <items>
+                        <separator alignment="left" id="Jwe-w9-NcF">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <group width="1" alignment="left" layout="vertical" spacing="6" id="Kaf-BM-aQP">
+                            <items>
+                                <group width="1" alignment="left" spacing="2" id="R5f-px-TVv">
+                                    <items>
+                                        <label width="0.90000000000000002" alignment="left" text="Some project with long name that takes 2 lines" textAlignment="left" numberOfLines="3" minimumScaleFactor="0.59999999999999998" id="by1-td-uc7">
+                                            <color key="textColor" name="Accent"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                        </label>
+                                        <group alignment="right" spacing="7" id="Xg9-GV-GiY">
+                                            <items>
+                                                <imageView width="8" height="8" alignment="right" image="bookmark.fill" catalog="system" id="ITT-YC-fHf">
+                                                    <color key="tintColor" red="0.94509803920000002" green="0.59999999999999998" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </imageView>
+                                                <separator alignment="right" id="iD8-NF-BXW">
+                                                    <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </separator>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <table alignment="left" id="bri-hK-GJV" customClass="Tas">
+                                    <items>
+                                        <tableRow identifier="TaskCellController" id="DVv-7d-adS" customClass="TaskCellController" customModule="ToDoWatchApp_Extension">
+                                            <group key="rootItem" width="1" height="45" alignment="left" spacing="8" id="IsC-QP-Aho">
+                                                <items>
+                                                    <separator height="20" alignment="left" verticalAlignment="center" id="LbY-3U-ESD">
+                                                        <color key="color" red="0.94509803920000002" green="0.59999999999999998" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </separator>
+                                                    <label width="0.80000000000000004" alignment="left" verticalAlignment="center" text="Some task" numberOfLines="2" id="gby-ZY-9ms">
+                                                        <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                                                    </label>
+                                                    <group alignment="right" layout="vertical" spacing="2" id="SlO-hx-8Ry" userLabel="Outdated Group">
+                                                        <items>
+                                                            <separator alignment="left" id="hZv-5Z-9dB">
+                                                                <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </separator>
+                                                            <imageView width="15" height="13" alignment="right" verticalAlignment="center" image="calendar.badge.exclamationmark" catalog="system" animationDuration="2" id="6dG-Q4-INR">
+                                                                <color key="tintColor" name="Accent"/>
+                                                            </imageView>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="outdatedGroup" destination="SlO-hx-8Ry" id="utx-3g-LEj"/>
+                                                <outlet property="outdatedIcon" destination="6dG-Q4-INR" id="4KD-5q-EhA"/>
+                                                <outlet property="priorityView" destination="LbY-3U-ESD" id="p9B-C7-lIr"/>
+                                                <outlet property="titleLabel" destination="gby-ZY-9ms" id="y8T-1d-uZS"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="favoriteView" destination="ITT-YC-fHf" id="ib9-t7-WnK"/>
+                        <outlet property="projectNameLabel" destination="by1-td-uc7" id="Hk2-wk-UcN"/>
+                        <outlet property="table" destination="bri-hK-GJV" id="2m0-eo-ISu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1764" y="271"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="Accent"/>
+    <resources>
+        <image name="Image" width="512" height="512"/>
+        <image name="bookmark.fill" catalog="system" width="114" height="128"/>
+        <image name="calendar" catalog="system" width="128" height="105"/>
+        <image name="calendar.badge.exclamationmark" catalog="system" width="128" height="107"/>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="rectangle.stack.fill" catalog="system" width="128" height="121"/>
+        <image name="tray.fill" catalog="system" width="128" height="86"/>
+        <namedColor name="Accent">
+            <color red="0.97200000286102295" green="0.36700001358985901" blue="0.29499998688697815" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="NoNetworkBannerBackgroundColor">
+            <color red="1" green="0.57800000905990601" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

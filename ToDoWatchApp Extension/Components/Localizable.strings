@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  ToDoApp
+
+  Created by Mykhailo Yeroshenko on 11.04.2021.
+  
+*/
+
+// Days of week //
+"MON" = "ПН";
+"TUE" = "ВТ";
+"WED" = "СР";
+"THU" = "ЧТ";
+"FRI" = "ПТ";
+"SAT" = "СБ";
+"SUN" = "ВС";

@@ -1,0 +1,205 @@
+// Add/edit project screen //
+// Title //
+"edit.project.screen_title.add" = "Add new project";
+"edit.project.screen_title.edit" = "Edit project";
+
+// TableView sections //
+"edit.project.screen_name.section.header" = "Project name";
+"edit.project.screen_name.section.footer" = "Use symbols a-z, A-Z, 0-9, or special characters (?!\":;%$#@).";
+"edit.project.screen_color.section.header" = "Project color";
+"edit.project.screen_color.section.footer" = "Select one of given colors to mark new project with a color label.";
+"edit.project.screen_parent.section.header" = "Parent project";
+"edit.project.screen_parent.section.footer" = "If your new project is a subproject of existing one, select its parent to keep the hierarchy.";
+"edit.project.screen_favorite.section.header" = "Is favorite";
+"edit.project.screen_favorite.section.footer" = "If you mark your project as favorite, it will be placed on top of your projects list.";
+"edit.project.screen_delete.section.header" = "Delete project";
+"edit.project.screen_delete.section.footer" = "Attention! Project will be deleted completely. Restoring is impossible.";
+
+// Cells //
+"edit.project.screen_textfield.cell.placeholder" = "New project name";
+"edit.project.screen_color.cell.empty" = "Choose color";
+"edit.project.screen_parent.cell.empty" = "Choose parent";
+"edit.project.screen_favorite.cell.name" = "Is favorite";
+
+// Alert //
+"edit.project.screen_alert.empty.name" = "Name can't be empty";
+"edit.project.screen_alert.project.created" = "New project created";
+"edit.project.screen_alert.project.edited" = "Project edited";
+"edit.project.screen_alert.project.action.error" = "Error occured. Try later.";
+"edit.project.screen_alert.ok" = "ОК";
+
+// Authorization screen //
+// Title //
+"authorization.screen_title" = "Authorization";
+"authorization.screen_alert.errorMessage" = "Error";
+"authorization.screen_alert.reload.button" = "Reload page";
+
+
+// Projects list screen //
+// Title //
+"projects.list.screen_title" = "All projects";
+
+
+// Alerts //
+"projects.list.screen_alert.deleteproject.title" = "Do you really want to delete project?";
+"projects.list.screen_alert.confirm.deletion.button" = "Delete";
+"projects.list.screen_alert.cancel.deletion.button" = "Cancel";
+"projects.list.screen_alert.deleted" = "Deleted";
+
+
+"projects.list.screen_alert.addproject.button" = "Add new project";
+"projects.list.screen_alert.canceladding.button" = "Cancel";
+
+
+// Add/edit task screen //
+// Title //
+"edit.task.screen_title.add" = "Add new task";
+"edit.task.screen_title.edit" = "Edit task";
+
+// Tableview sections //
+"edit.task.screen_name.section.header" = "Task name";
+"edit.task.screen_name.section.footer" = "Use symbols a-z, A-Z, 0-9, or special characters (?!\":;%$#@).";
+"edit.task.screen_label.section.header" = "Task label";
+"edit.task.screen_label.section.footer" = "Select one of given labels to mark new task.";
+"edit.task.screen_date.section.header" = "Due date";
+"edit.task.screen_date.section.footer" = "If your task has deadline - select appropriate date and time, it will be displayed on task's cell. By default task doesn't have due date.";
+"edit.task.screen_project.section.header" = "Related project";
+"edit.task.screen_project.section.footer" = "If the task is a part of existing project, select it to keep the hierarchy. By default all new tasks without related project are moved to Inbox project.";
+"edit.task.screen_priority.section.header" = "Task priority";
+"edit.task.screen_priority.section.footer" = "You can assign select task priority. By default it is 'Priority 4 - Low'.";
+"edit.task.screen_delete.section.header" = "Delete task";
+"edit.task.screen_delete.section.footer" = "Attention! task will be deleted completely. Restoring is impossible.";
+
+// Cells //
+"edit.task.screen_textfield.cell.placeholder" = "New task name";
+"edit.task.screen_project.cell.title" = "Select project";
+"edit.task.screen_label.cell.title" = "Select labels";
+"edit.task.screen_date.cell.title" = "Select date and time";
+"edit.task.screen_delete.cell.title" = "Delete";
+
+// Alert //
+"edit.task.screen_alert.empty.name" = "Name can't be empty";
+"edit.task.screen_alert.task.created" = "New task created";
+"edit.task.screen_alert.task.edited" = "Task edited";
+"edit.task.screen_alert.task.deleted" = "Task deleted";
+"edit.task.screen_alert.task.action.error" = "Error occured. Try later.";
+"edit.task.screen_alert.ok" = "ОК";
+"edit.task.screen_delete.confirmation.title" = "Do you really want to delete task?";
+
+
+// Add/edit task screen //
+"add.edit.controllers_reset.barbutton.title" = "Reset";
+
+
+// TabBarController //
+// NavItems title //
+"tab.bar.controller_projects.list.title" = "Projects";
+"tab.bar.controller_tasks.list.title" = "Tasks";
+"tab.bar.controller_settings.title" = "Settings";
+
+
+// ContextualActions //
+"table.view_contextualaction.delete" = "Delete";
+"table.view_contextualaction.edit" = "Edit";
+"table.view_contextualaction.close" = "Close";
+"table.view_contextualaction.make.not.favorite" = "Make not favorite";
+"table.view_contextualaction.make.favorite" = "Make favorite";
+
+
+// DatePickerViewController //
+"datepicker.controller_estimating.alert.title" = "You can not estimate your task for date untill current";
+
+// Settings controller //
+"settings.controller_title" = "Settings";
+"settings.controller_alert.logout.title" = "Do you really want to log out?";
+"settings.controller_alert.logout.confirm.action.title" = "Log out";
+"settings.controller_сell.logout.title" = "Logout";
+
+// TableView sections //
+"settings.controller_logout.section.header" = "Log out from current account";
+"settings.controller_logout.section.footer" = "After logout your login and password will be deleted from device.";
+
+
+// All Tasks Controller //
+"all.tasks.controller_title" = "All tasks";
+
+
+// Priorities //
+"priority_low" = "Default";
+"priority_normal" = "Low";
+"priority_high" = "Medium";
+"priority_urgent" = "High";
+
+// ProjectSortDescriptors section headers //
+"project.filters.screen_name.section" = "Name ordering options";
+"project.filters.screen_favorite.section" = "Sort projects by 'favorite'";
+
+// ProjectSortDescriptors description //
+"project.descriptor_name.az" = "Show by name A-Z";
+"project.descriptor_name.za" = "Show by name Z-A";
+"project.descriptor_favorite.first" = "Show favorite first";
+"project.descriptor_favorite.last" = "Show non-favorite first";
+
+// TaskSortDescriptors section headers //
+"tasks.filters.screen_date.section" = "By planned date";
+"tasks.filters.screen_creation.section" = "By creation date";
+"tasks.filters.screen_priority.section" = "By priority";
+
+// TaskSortDescriptors description //
+"task.descriptor_name.az" = "Show by name A-Z";
+"task.descriptor_name.za" = "Show by name Z-A";
+"task.descriptor_date.ascending" = "By date ascending";
+"task.descriptor_date.descending" = "By date descending";
+"task.descriptor_created.ascending" = "Created long ago";
+"task.descriptor_created.descending" = "Created recently";
+"task.descriptor_comments.ascending" = "Less comment first";
+"task.descriptor_comments.descending" = "More comments first";
+"task.descriptor_priority.ascending" = "Lower priority first";
+"task.descriptor_priority.descending" = "Higher priority first";
+
+// Filters screen button titles //
+"filters.screen_reset.title" = "Reset";
+"filters.screen_title" = "Change ordering";
+
+// Reachability alerts //
+"reachability_offline.title" = "Device is offline";
+"reachability_fetch.projects" = "Projects list can be outdated";
+"reachability_add.project" = "Try create project later";
+"reachability_edit.project" = "Try edit project later";
+"reachability_delete.project" = "Try delete project later";
+"reachability_fetch.tasks" = "Tasks list can be outdated";
+"reachability_add.task" = "Try add task later";
+"reachability_edit.task" = "Try edit task later";
+"reachability_close.task" = "Try close task later";
+"reachability_delete.task" = "Try delete task later";
+"reachability_add.logOut" = "Try log out later";
+
+// Empty tableviews //
+"tableview_no.tasks.title" = "You don't have any tasks here";
+"tableview_no.tasks.message" = "Add one by clicking '+' button below";
+"tableview_no.projects.title" = "You don't have any projects here";
+"tableview_no.projects.message" = "Add one by clicking '+' button below";
+
+// NoNetworkView //
+"no.network.view_title" = "No internet connection. Can't sync data";
+
+// SearchBar titles //
+"search.bar_project" = "Search project";
+"search.bar_task" = "Search task";
+
+// Errors //
+// Auth error //
+"auth.error_empty.token" = "Can't get authorization token from server. Try later";
+"auth.error_not.valid.url" = "Invalid authorization redirect. Try again";
+"auth.error_invalid.grands" = "Invalid grands";
+
+// WCSession Errors //
+"watch.session_encoding.failed" = "Converting data to update info on your watch failed. Info on watch device will stay outdated";
+"watch.session_decoding.failed" = "Converting data to update info on your watch failed. Info on watch device will stay outdated";
+"watch.session_context.updating.failed" = "Sync with your watch failed. Info on watch device will stay outdated";
+
+
+// SplitMenu sections
+"split.menu_all.projects" = "Projects";
+"split.menu_all.tasks" = "Tasks";
+"split.menu_settings" = "Settings";
